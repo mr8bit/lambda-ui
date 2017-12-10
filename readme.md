@@ -12,7 +12,7 @@
 
 <h2>Какие элменты есть в Lambda UI? </h2>
 <ul>
-    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/card/card.md"> Каточки новостей</a></li>
+    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/card/card.md"> Карточки новостей</a></li>
     <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/navigation/navigations.md"> Навигация</a></li>
 </ul>
 
