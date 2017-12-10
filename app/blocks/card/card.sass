@@ -1,0 +1,158 @@
+.card
+  margin: 15px
+  float: left
+  border-radius: 6px
+  text-rendering: optimizeLegibility
+  -moz-osx-font-smoothing: subpixel-antialiased
+  -webkit-font-smoothing: subpixel-antialiased
+  transition-timing-function: ease
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+  &--number
+    width: 255px
+    background-color: #1875F0
+    height: 240px
+  &--middle
+    background-color: #fff
+    height: 330px
+    width: 255px
+  &--big
+    height: 330px
+    width: 540px
+  &--small
+    width: 255px
+    height: 240px
+  // Там где тэг
+  &-head
+    &--number
+      display: flex
+      justify-content: center
+      align-content: center
+      align-items: center
+    &--small
+      height: 55px
+    &--middle
+      height: 180px
+    &--big
+      display: flex
+      justify-content: center
+      align-content: center
+      align-items: center
+      height: 100px
+    &__tag
+      color: #fff
+      border-radius: 4px
+      font-weight: bolder
+      background-color: red
+      padding: 5px 10px
+      font-size: 9px
+      text-transform: uppercase
+      &--small
+        position: absolute
+        margin-top: 20px
+        margin-left: 20px
+      &--middle
+        position: absolute
+        margin-top: 20px
+        margin-left: 20px
+      &--number
+        background-color: rgba(0, 0, 0, 0.3)
+        margin-top: 50px
+        height: 24px
+      &--big
+        margin-top: 50px
+        height: 24px
+  &__img
+    display: block
+    max-width: 100%
+    height: auto
+    &--middle
+      border-radius: 5px 5px 0 0
+    &--big
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1)
+      border-radius: 6px
+    &--small
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1)
+      border-radius: 6px
+  // Что бы наложить затемнение на всю картинку
+  &-content
+    width: 540px
+    height: 330px
+    background-color: rgba(0, 0, 0, 0.3)
+    border-radius: 6px
+    position: absolute
+    &--small
+      width: 255px
+      height: 240px
+
+  // Название статей тут
+  &-body
+    padding: 20px 20px
+    &--number
+      height: 50px
+    &--small
+      display: flex
+      align-items: flex-end
+      height: 123px
+    &--middle
+      height: 88px
+    &--big
+      height: 168px
+    &__title
+      font-weight: 500
+      &--number
+        line-height: 50px
+        font-size: 48px
+        color: #fff
+        margin-top: 10px
+        text-align: center
+      &--middle
+        line-height: 23px
+        color: #666666
+        font-size: 16px
+      &--small
+        font-size: 14px
+        color: #fff
+        line-height: 23px
+      &--big
+        line-height: 40px
+        font-size: 24px
+        color: #FFFFFF
+        text-align: center
+  // Описание числа
+  &-description
+    color: #fff
+    padding: 10px 20px
+    font-size: 14px
+    font-weight: 500
+    text-align: center
+  // Футер
+  &-footer
+    height: 62px
+    padding: 20px 30px
+    font-weight: 500
+    display: flex
+    justify-content: space-between
+    &--big
+      border-top: 2px solid rgba(255, 255, 255, 0.4)
+    &--middle
+      border-top: 2px solid #F7F7F7
+    &__datetime
+      font-size: 12px
+      &--middle
+        color: #B3B3B3
+      &--big
+        color: #fff
+    &__countcomment
+      font-size: 12px
+      display: flex
+      justify-content: flex-start
+      align-items: center
+      &--middle
+        color: #B3B3B3
+      &--big
+        color: #fff
+      &__number
+        padding-left: 15px
+    &__author
+      font-size: 13px
+      color: #fff
