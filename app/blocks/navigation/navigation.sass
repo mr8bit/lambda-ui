@@ -47,4 +47,74 @@
         margin: 0
         line-height: 100px
         color: #666666
+  &-card
+    background-color: #fff
+    &-container
+      width: 100%
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+      &__menu
+        width: 33.333%
+        display: flex
+        align-items: center
+        &--center
+          width: auto
+        &--width_logo
+          width: auto
+        &__logo
+          margin-left: 30px
+          display: flex
+          align-items: center
+        &__sidebar
+          padding: 32px 36px
+          border-right: 2px solid #F5F5F5
 
+        &__list
+          padding: 0
+          margin: 0 0 0 30px
+          &--center
+            margin: 0
+          &__item
+            display: inline-block
+            font-size: 14px
+            margin: 0 10px
+            &:first-child
+              margin-left: 0
+            &__link
+              color: #999999
+              &:hover
+                text-decoration: none
+                color: #1875F0
+
+      &__logo
+        width: 33.333%
+        display: flex
+        align-items: center
+
+      &__social
+
+        display: flex
+        align-items: center
+        &__list
+          margin: 0 30px 0 0
+          padding: 0
+          &__item
+            margin-left: 10px
+            display: inline-block
+            &__link
+              display: flex
+              align-items: center
+              align-content: center
+              justify-content: center
+              justify-items: center
+              border-radius: 50%
+              border: 2px solid #F5F5F5
+              width: 40px
+              height: 40px
+              &__icon
+                fill: #D8D8D8
+              &:hover
+                border-color: #1875F0
+              &:hover &__icon
+                fill: #1875F0
