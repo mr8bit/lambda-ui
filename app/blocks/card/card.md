@@ -4,7 +4,8 @@
 
 
 <h4>Карточка большая</h5>
-<img src="../../../img/card/card.png">
+<img src="../../../img/card/card_big.png">
+
 ```
     <div class="card card--big">
         <div class="card-content">
@@ -52,5 +53,6 @@
         </div>
         <img class="card__img" src="img/card/big_card_img.png">
     </div>
-
 ```
+
+
