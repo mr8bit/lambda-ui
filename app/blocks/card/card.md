@@ -6,7 +6,7 @@
 <h4>Карточка большая</h5>
 <img src="../../../img/card/card_big.png">
 
-```
+```html
     <div class="card card--big">
         <div class="card-content">
             <div class="card-head--big">
