@@ -7,6 +7,14 @@
   -webkit-font-smoothing: subpixel-antialiased
   transition-timing-function: ease
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+  &--event
+    &--middle
+      width:  350px
+      background-color: #fff
+      height: 420px
+    &--big
+      width:  350px
+      height: 420px
   &--number
     width: 255px
     background-color: #1875F0
@@ -23,6 +31,9 @@
     height: 240px
   // Там где тэг
   &-head
+    &--event
+      &--middle
+        height: 211px
     &--number
       display: flex
       justify-content: center
@@ -61,6 +72,10 @@
       &--big
         margin-top: 50px
         height: 24px
+      &--transparent
+        letter-spacing: 1.25px
+        background-color: rgba(0, 0, 0, 0.3)
+
   &__img
     display: block
     max-width: 100%
@@ -77,13 +92,16 @@
   &-content
     width: 540px
     height: 330px
-    background-color: rgba(0, 0, 0, 0.3)
+    background: linear-gradient(to bottom, rgba(0,0,0,.30), rgba(0,0,0,0.5))
     border-radius: 6px
     position: absolute
     &--small
       width: 255px
       height: 240px
-
+    &--event--big
+      background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5))
+      width:  350px
+      height: 420px
   // Название статей тут
   &-body
     padding: 20px 20px
@@ -93,6 +111,9 @@
       display: flex
       align-items: flex-end
       height: 123px
+    &--event--middle
+      height: 72px
+      padding: 0 20px
     &--middle
       height: 88px
     &--big
@@ -118,6 +139,12 @@
         font-size: 24px
         color: #FFFFFF
         text-align: center
+      &--event--middle
+        font-size: 18px
+        color: #666666
+      &--event--big
+        color: #fff
+        font-size: 18px
   // Описание числа
   &-description
     color: #fff
@@ -132,6 +159,10 @@
     font-weight: 500
     display: flex
     justify-content: space-between
+    &--event
+      &--middle
+        padding: 20px 20px
+        border-top: none
     &--big
       border-top: 2px solid rgba(255, 255, 255, 0.4)
     &--middle
@@ -156,3 +187,27 @@
     &__author
       font-size: 13px
       color: #fff
+    &__more
+      padding: 8px 19px
+      color: #B3B3B3
+      border: 2px solid #F5F5F5
+      font-size: 10px
+      border-radius: 4px
+      background-color: transparent
+      text-transform: uppercase
+      font-weight: bolder
+      transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+      &:hover
+        color: #fff
+        background-color: #B3B3B3
+        text-decoration: none
+        border-color: #B3B3B3
+      &--event--big
+        color: #fff
+        border: none
+        padding: 10px 21px
+        background: rgba(0, 0, 0, 0.3)
+        &:hover
+          color: #fff
+          border: none
+          background: rgba(0, 0, 0, 1)
