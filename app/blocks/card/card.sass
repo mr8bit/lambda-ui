@@ -2,11 +2,19 @@
   margin: 15px
   float: left
   border-radius: 6px
+  display: block
   text-rendering: optimizeLegibility
   background-position: center
   -webkit-font-smoothing: subpixel-antialiased
   transition-timing-function: ease
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1)
+  &--main
+    width: calc(100% - 30px)
+    border: none
+    display: flex
+    justify-content: space-between
+    box-shadow: none
+    height: 360px
   &--event
     &--middle
       width:  350px
@@ -31,6 +39,10 @@
     height: 240px
   // Там где тэг
   &-head
+    &--main
+      display: flex
+      justify-content: center
+      align-items: flex-start
     &--event
       &--middle
         height: 211px
@@ -57,6 +69,12 @@
       padding: 5px 10px
       font-size: 9px
       text-transform: uppercase
+      &--main
+        position: relative
+        margin-right: 0
+        font-size: 10px
+        letter-spacing: 1px
+        margin-left: 0
       &--small
         position: absolute
         margin-top: 20px
@@ -95,6 +113,12 @@
     position: relative
     width: 100%
     height: 100%
+    &--main
+      background: none
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
     &--small
       width: 255px
       height: 240px
@@ -118,6 +142,12 @@
       height: 168px
     &__title
       font-weight: 500
+      &--main
+        line-height: 60px
+        font-size: 30px
+        color: #666666
+        margin-top: 10px
+        text-align: center
       &--number
         line-height: 50px
         font-size: 48px
@@ -143,6 +173,15 @@
       &--event--big
         color: #fff
         font-size: 18px
+    &__description
+      margin-top: 15px
+      font-size: 13px
+      font-weight: 500
+      padding: 0 20px
+      color: #999999
+      line-height: 25px
+      text-align: center
+
   // Описание числа
   &-description
     color: #fff
@@ -157,6 +196,9 @@
     font-weight: 500
     display: flex
     justify-content: space-between
+    &--main
+      width: 50%
+
     &--event
       &--middle
         padding: 20px 20px
@@ -165,9 +207,10 @@
       border-top: 2px solid rgba(255, 255, 255, 0.4)
     &--middle
       border-top: 2px solid #F7F7F7
+
     &__datetime
       font-size: 12px
-      &--middle
+      &--middle, &--main
         color: #B3B3B3
       &--big
         color: #fff
@@ -176,7 +219,7 @@
       display: flex
       justify-content: flex-start
       align-items: center
-      &--middle
+      &--middle, &--main
         color: #B3B3B3
       &--big
         color: #fff
