@@ -14,6 +14,9 @@
 <ul>
     <li><a href="app/blocks/card/card.md"> Каточки новостей</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Навигация</a></li>
+    <li><a href="app/blocks/navigation/navigations.md"> Кнопки</a></li>
+    <li><a href="app/blocks/navigation/navigations.md"> Панели</a></li>
+    <li><a href="app/blocks/navigation/navigations.md"> Иконки</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Подвал</a></li>
 </ul>
 
