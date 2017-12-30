@@ -9,7 +9,7 @@
   cursor: pointer
   user-select: none
   text-transform: uppercase
-  border: 1px solid transparent
+  border: 2px solid transparent
   border-radius: 4px
   transition: all 200ms
   // START Type
@@ -33,10 +33,16 @@
     color: #B3B3B3
     background-color: #fff
     border-color: #F5F5F5
+    &:hover
+      color: #fff
+      background-color: #0275d8
+      border-color: #0275d8
   &--ghost
     color: #B3B3B3
     background-color: #fff
     border-color: transparent
+    &:hover
+      color: #1875F0
   // END Type
 
   // START Size
@@ -66,4 +72,11 @@
   // START Border
   &--rounded
     border-radius: 30px
-  
+  &--circle
+    width: 45px
+    height: 45px
+    text-align: center
+    padding: 5px 0
+    font-size: 20px
+    line-height: 40px
+    border-radius: 30px
