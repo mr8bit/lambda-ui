@@ -1,8 +1,8 @@
 <h1>Карточки новостей</h1>
-<img src="../../../img/card/card.png">
+<img src="../img/card/card.png">
 
 <h4>Карточка большая</h5>
-<img src="img/card/card_big.png">
+<img src="../img/card/card_big.png">
 
 ```html
 <div class="card card--big" style="background-image: url('img/card/big_card_img.png')">
