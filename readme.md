@@ -10,9 +10,9 @@
 <p>Lambda UI использует лучшие практики для веб разработки и оптимизации для Google PageSpeed.</p>
 
 
-<h2>Какие элменты есть в Lambda UI? </h2>
+<h2>Какие элементы есть в Lambda UI? </h2>
 <ul>
-    <li><a href="app/blocks/card/card.md"> Каточки новостей</a></li>
+    <li><a href="app/blocks/card/card.md"> Карточки новостей</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Навигация</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Кнопки</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Панели</a></li>
@@ -33,6 +33,6 @@
 <ul>
 	<li><strong>gulp</strong>: запуск стандартной  gulp задачи (sass, js, watch, browserSync) для веб разработки;</li>
 	<li><strong>build</strong>: собрать проект в папку <strong>dist</strong> (cleanup, image optimize, removing unnecessary files);</li>
-	<li><strong>clearcache</strong>: отчистить gulp cache.</li>
+	<li><strong>clearcache</strong>: очистить gulp cache.</li>
 </ul>
 
