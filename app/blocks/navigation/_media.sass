@@ -1,23 +1,81 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1334px)
+  .navigation
+    &-card
+      &-container
+        &__menu
+          &__list
+            display: flex
+            flex-direction: column
+            &__item
+              margin: 0 20px 0 0
+            &--center
+              flex-direction: row
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .navigation
+    &-card
+      &-container
+        &__social
+          max-width: 33%
+        &__menu
+          min-width: 33%
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .navigation
+    &-card
+      &-container
+        &__social
+          width: 160px
+          &__list
+            margin-right: 20px
+        &__menu
+          width: auto
+          &__list
+            margin-right: 20px
+            &--center
+              flex-direction: column
+              margin-right: 0
+          &--center
+            display: flex
+            justify-content: center
+            padding-left: 75px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+  .navigation
+    &-card
+      &-container
+        &__logo
+          display: none
+        &__menu
+          &--center
+            padding-left: 0
+          &__logo
+            display: none
+        &__social
+          width: 130px
+          &__list
+            &__item
+              &__link
+                width: 30px
+                height: 30px
+                &__icon
+                  font-size: 14px
+                  line-height: 14px
+                  height: 14px
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
-	/**/
+  .navigation
+    &-card
+      &-container
+        &__menu
+          &__list
+            display: none
