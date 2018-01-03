@@ -11,6 +11,13 @@
               margin: 0 20px 0 0
             &--center
               flex-direction: row
+    &-head
+      &-container
+        &--block
+          width: 100%
+        &-body
+          &--fluid
+            width: 100%
 
 
 /* Medium Devices, Desktops */
@@ -44,6 +51,27 @@
             display: flex
             justify-content: center
             padding-left: 75px
+    &-head
+      &-container
+        &-body
+          flex-direction: column
+          height: auto
+          &__menu
+            align-self: flex-start
+            &__item
+        &__title
+          align-self: flex-start
+
+
+/* ломается шапка с навигацией */
+@media only screen and (max-width : 554px)
+  .navigation
+    &-head
+      &-container
+        &-body
+          &__menu
+            &__item
+              padding: 33px 10px
 
 
 /* Extra Small Devices, Phones */
@@ -69,7 +97,25 @@
                   font-size: 14px
                   line-height: 14px
                   height: 14px
+    &-head
+      &-container
+        &-body
+          padding: 0 4px
+          &__menu
+            &__item
+              padding: 10px 4px
 
+
+/* ломается шапка с навигацией */
+@media only screen and (max-width : 370px)
+  .navigation
+    &-head
+      &-container
+        &-body
+          &__menu
+            &__item
+              padding: 10px 3px
+              font-size: 13px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
@@ -79,3 +125,9 @@
         &__menu
           &__list
             display: none
+    &-head
+      &-container
+        &-body
+          &__menu
+            &__item
+              font-size: 12px
