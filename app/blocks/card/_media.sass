@@ -5,17 +5,65 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+  .card
+    display: inline-block
+    &--main
+      flex-direction: column
+      height: auto
+    &-head
+      &--main
+        position: relative
+        bottom: 45px
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  .card
+    &--main
+      padding: 0
+    &-footer
+      width: 100%
+    &--big
+      width: 100%
+      background-size: cover
+      margin: 15px auto
+    &-head
+      &__tag
+        &--big
+          margin-top: 10px
+      &--big
+        height: 75px
+    &-body
+      &--big
+        height: 193px
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.card
+      &-head
+        &--main
+          bottom: 50px
+        &__tag
+          &--big
+            margin-top: 0
+        &--big
+          height: 50px
+      &-body
+        &--big
+          height: 218px
+      &-footer
+        &--big
+          padding: 4px
+          align-items: center
+      &--middle
+        margin: 15px auto
+      &--small
+        width: 100%
+        margin: 15px auto
+      &--number
+        width: 100%
+        margin: 15px auto
 
 
 /* Custom, iPhone Retina */
