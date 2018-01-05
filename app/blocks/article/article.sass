@@ -9,7 +9,6 @@
     &-content
       border-radius: 6px 6px 0 0
       padding: 95px 65px 65px 95px
-
       height: 100%
       width: 100%
       display: flex
@@ -62,7 +61,6 @@
           flex-direction: column
           display: flex
           align-items: center
-
           &__num
             margin-top: 25px
             color: #fff
@@ -133,11 +131,13 @@
       width: 100%
       padding: 30px 65px
       display: flex
+      flex-wrap: wrap
       flex-direction: row
       justify-content: space-between
     &__bottom
       width: 100%
       padding: 45px 65px
+      flex-wrap: wrap
       display: flex
       flex-direction: row
       justify-content: space-between
@@ -207,7 +207,8 @@
     &-tags
       width: 50%
       &__link
-        margin: 0 5px
+        margin:  5px
+        float: left
         &:first-child
           margin-left: 0
         &:last-child

@@ -1,6 +1,9 @@
 <h1>Карточки новостей</h1>
 <img src="../img/card/card.png">
 
+
+
+
 <h4>Карточка большая</h4>
 <img src="../img/card/card_big.png">
 
@@ -70,7 +73,7 @@
 ```html
 <div class="card card--small" style="background-image: url('img/card/big_card_img.png')">
     <a href="#" class="card__link">
-        <div class="card-content" style="position: relative;width:100%;height: 100%;">
+        <div class="card-content">
             <div class="card-head--small">
             <span class="card-head__tag card-head__tag--small ">
 				перевод

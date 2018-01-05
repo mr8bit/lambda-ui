@@ -80,19 +80,25 @@
     &-card
       &-container
         &__logo
-          display: none
         &__menu
+          &__sidebar
+            padding: 25px 33px
           &--center
             padding-left: 0
           &__logo
             display: none
         &__social
-          width: 130px
           &__list
+            display: flex
+            flex-direction: row
             &__item
+              display: none
+              &:first-child
+                display: block
+
               &__link
-                width: 30px
-                height: 30px
+                width: 45px
+                height: 45px
                 &__icon
                   font-size: 14px
                   line-height: 14px
@@ -106,7 +112,10 @@
           &__menu
             &__item
               padding: 10px 4px
-
+    &-breadcrumb
+      width: 100%
+      &-list
+        margin: 0 0 0 15px
 
 /* ломается шапка с навигацией */
 @media only screen and (max-width : 370px)

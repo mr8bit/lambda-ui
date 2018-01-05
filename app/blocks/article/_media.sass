@@ -1,23 +1,96 @@
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 1200px)
+  /**/
 
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width: 992px)
+  /**/
 
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+@media only screen and (max-width: 768px)
+  /**/
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
+@media only screen and (max-width: 480px)
+  .article
+    &-header-card
+      height: 510px
+      width: calc(100%)
+      margin: 15px 0px 0
+      border-radius: 0
+      &-content
+        border-radius: 0
+        padding: 65px 25px 65px 25px
+        flex-direction: column
+        &-left
+          width: 100%
+          height: 75%
+          &-body
+            &__title
+              font-size: 32px
+          &-footer
+            display: flex
+            justify-content: space-between
+        &-right
+          width: 100%
+          height: 25%
+          flex-direction: row
+          &-info
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            &__num
+              margin-top: 0
+              margin-left: 15px
+    &-body
+      width: calc(100%)
+      margin: 0px 0px
+      &__content
+        width: 95%
+        p
+          font-size: 15px
+          line-height: 23px
+    &-footer
+      padding-bottom: 25px
+      width: 100%
+      &__bottom
+        padding: 20px 10px
+        flex-direction: column
+        align-items: center
+        align-content: center
+      &__top
+        padding: 20px 10px
+      &-tags
+        width: 100%
+        &__link
+          margin: 5px
+          &:first-child
+            margin-left: 5px
+      &-share
+        margin-top: 30px
+        justify-content: center
+        width: 100%
+        &__icon
+          font-size: 25px
+          line-height: 25px
+          height: 25px
+        &__num
+          font-size: 13px
+          line-height: 13px
+      &-author
+        width: 57%
+        order: 1
+      &-go_top
+        width: 43%
+        order: 2
+      &-about_article
+        margin-top: 30px
+        width: 100%
+        order: 3
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width: 320px)
+  /**/
