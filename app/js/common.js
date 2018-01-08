@@ -440,8 +440,8 @@ var Intense = (function () {
                 'margin': '0px',
                 'padding': '0px',
                 'fontWeight': 'normal',
-                'fontSize': '40px',
-
+                'fontSize': '32px',
+                'line-height': '42px',
                 'textAlign': 'left'
             }
             var captionTitle = document.createElement('h1');

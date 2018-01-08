@@ -18,7 +18,10 @@
         &-body
           &--fluid
             width: 100%
-
+    &-breadcrumb
+      width: 100%
+      &-list
+        margin: 0 0 0 15px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -36,31 +39,45 @@
   .navigation
     &-card
       &-container
-        &__social
-          width: 160px
-          &__list
-            margin-right: 20px
+        &__logo
         &__menu
-          width: auto
-          &__list
-            margin-right: 20px
-            &--center
-              flex-direction: column
-              margin-right: 0
+          &__sidebar
+            padding: 25px 33px
           &--center
+            padding-left: 0
+          &__logo
+            display: none
+        &__social
+          &__list
             display: flex
-            justify-content: center
-            padding-left: 75px
+            flex-direction: row
+            &__item
+              display: none
+              &:first-child
+                display: block
+
+              &__link
+                width: 45px
+                height: 45px
+                &__icon
+                  font-size: 14px
+                  line-height: 14px
+                  height: 14px
     &-head
       &-container
-        &-body
-          flex-direction: column
-          height: auto
-          &__menu
-            align-self: flex-start
-            &__item
         &__title
-          align-self: flex-start
+          line-height: 60px
+        &-body
+          padding: 0 4px
+          &__menu
+            &__item
+              padding: 10px 4px
+    &-breadcrumb
+      width: 100%
+      &-list
+        margin: 0 0 0 15px
+
+
 
 
 /* ломается шапка с навигацией */
