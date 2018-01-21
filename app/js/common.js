@@ -244,7 +244,6 @@
         "autoplayDelay": 3000
     });
 
-
 })();
 
 
@@ -598,3 +597,30 @@ var Intense = (function () {
     });
 
 })();
+
+
+function toogleSibar() {
+    var sidebar = document.getElementsByClassName("js-SideBar")[0];
+    sidebar.classList.toggle("navigation-card-sidebar__view");
+    console.log("toogle");
+
+}
+
+function closeSidebar() {
+    try {
+        var clsseSideba = document.getElementsByClassName("navigation-card-sidebar__view")[0];
+        clsseSideba.classList.remove("navigation-card-sidebar__view");
+    } catch (err) {
+        console.log(err)
+    }
+}
+
+function headdropdown() {
+    var sidebar = document.getElementsByClassName("js-headDropDown")[0];
+    sidebar.classList.toggle("navigation-head-container-body__menu--view");
+}
+document.getElementsByClassName("js-toogleSidebar")[0].addEventListener("click", toogleSibar);
+
+document.getElementsByClassName("navigation-head-container__button")[0].addEventListener("click", headdropdown);
+
+window.addEventListener("scroll", closeSidebar);

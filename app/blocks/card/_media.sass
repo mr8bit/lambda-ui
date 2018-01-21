@@ -48,33 +48,75 @@
           &--big
             margin-top: 0
         &--big
-          height: 50px
+          height: auto
+          padding: 35px 0
+          padding-bottom: 0px
       &-body
         &--big
-          height: 218px
+          height: auto
+          padding: 55px 25px
+        &--middle
+          height: auto
+        &--small
+          height: auto
+        &__title
+          line-height: 30px
+          font-weight: 300
+          font-size: 20px
+          word-wrap: break-word
+          white-space: normal
+          &--middle
+            font-size: 18px
+            line-height: 28px
+            word-wrap: break-word
+            white-space: normal
+          &--small
+            font-size: 16px
+            color: #fff
+            line-height: 23px
+          &--number
+            line-height: 50px
+            font-size: 48px
       &-footer
         &--big
-          padding: 4px
+          padding: 10px 15px
           align-items: center
+        &__countcomment
+          &--big
+            display: none
+      &--big
+        height: auto
+        margin: 15px 25px
+        width: calc(100% - 50px)
       &--middle
-        margin: 15px auto
+        height: auto
+        margin: 15px 25px
+        width: calc(100% - 50px)
       &--small
-        width: 100%
-        margin: 15px auto
+        height: auto
+        margin: 15px 25px
+        width: calc(100% - 50px)
       &--number
-        width: 100%
-        margin: 15px auto
+        margin: 15px 25px
+        width: calc(100% - 50px)
       &--event
         &--middle
-          width: 320px
-          margin: 15px 0
+          height: auto
+          margin: 15px 25px
+          width: calc(100% - 50px)
         &--big
-          width: 320px
-          margin: 15px 0
+          height: auto
+          margin: 15px 25px
+          width: calc(100% - 50px)
       &--mini
         width: 320px
         margin: 15px 0
 
+      &__img
+        display: block
+        width: 100%
+        height: max-content
+        object-fit: cover
 
 
 /* Custom, iPhone Retina */
