@@ -6,6 +6,7 @@
   text-align: center
   white-space: nowrap
   vertical-align: middle
+  outline: none
   cursor: pointer
   user-select: none
   text-transform: uppercase
@@ -43,9 +44,25 @@
     border-color: transparent
     &:hover
       color: #1875F0
+  &--no-border
+    background-color: transparent
+    color: #B3B3B3
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: center
+    text-transform: uppercase
+    font-weight: bolder
+    letter-spacing: 1.5px
+    &:hover
+      border: 2px solid #B3B3B3
   // END Type
 
   // START Size
+  &--full-width
+    width:  calc(100% - 30px)
+    margin: 0 15px
+
   &--extra-small
     font-size: 9px
     font-weight: bolder
