@@ -41,12 +41,12 @@
 <nav class="navigation-card">
     <div class="navigation-card-container">
         <div class="navigation-card-container__menu">
-            <div class="navigation-card-container__menu__sidebar">
+            <div class="navigation-card-container__menu__sidebar js-toogleSidebar">
                 <span class="icon icon-menu"></span>
             </div>
         </div>
         <div class="navigation-card-container__logo">
-            <span class="icon icon-logo"> </span>
+            <span class="icon icon-logo navigation-card-container__brand"> </span>
         </div>
         <div class="navigation-card-container__social">
             <ul class="navigation-card-container__social__list">
@@ -73,14 +73,40 @@
             </ul>
         </div>
     </div>
+    <div class="navigation-card-sidebar js-SideBar ">
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+        </ul>
+    </div>
 </nav>
+
 
 
 <nav class="navigation-head ">
     <div class="navigation-head-container navigation-head-container--block">
-        <div class="navigation-head-container-body">
-            <h4 class="navigation-head-container__title">Мероприятия</h4>
-            <ul class="navigation-head-container-body__menu">
+        <div class="navigation-head-container-body navigation-head-container-body--block">
+             <h4 class="navigation-head-container__title ">Публикации</h4>
+            <div class="navigation-head-container__dropdown">
+                <button class="navigation-head-container__button">
+                    <span class="icon icon-more"></span>
+                </button>
+            </div>
+
+            <ul class="navigation-head-container-body__menu js-headDropDown">
                 <li class="navigation-head-container-body__menu__item navigation-head-container-body__menu__item--active ">
                     Все
                 </li>
@@ -296,7 +322,9 @@
 
     </div>
 
-
+ <div class="card__more">
+        <button class="btn  btn--small btn--rounded btn--no-border btn--full-width ">ЗАГРУЗИТЬ <span class="icon icon-arrow-right icon-rotate-90" style="font-size: 16px;margin-left: 5px"></span></button>
+    </div>
 </div>
 
 

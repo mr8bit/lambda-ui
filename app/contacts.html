@@ -28,14 +28,13 @@
 
 <body>
 
-
 <div class="navigation-big" style="background-image: url('img/head/contact_bg.png')">
-      <div class="navigation-big-content">
+    <div class="navigation-big-content">
         <div class="navigation-big-content__head">
             <nav class="navigation-card navigation-card--transparent">
                 <div class="navigation-card-container">
                     <div class="navigation-card-container__menu">
-                        <div class="navigation-card-container__menu__sidebar navigation-card-container__menu__sidebar--transparent">
+                        <div class="navigation-card-container__menu__sidebar navigation-card-container__menu__sidebar--transparent js-toogleSidebar">
                             <span class="icon icon-menu"></span>
                         </div>
                     </div>
@@ -79,8 +78,29 @@
         </div>
 
     </div>
+    <div class="navigation-card-sidebar js-SideBar ">
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+        </ul>
+    </div>
 
 </div>
+
+
 
 <div class="panel panel--big">
     <div class="panel__4 panel-contact">
@@ -91,7 +111,7 @@
 
             <ul class="panel-contact__list">
                 <li class="panel-contact__item">
-                    <span class="icon icon-phone panel-contact__icon "></span>Телефон: <a class="panel-contact__link" href="#">+8 (800) 555-35-35</a>
+                    <span class="icon icon-phone panel-contact__icon "></span> <span>Телефон:</span> <a class="panel-contact__link" href="#">+8 (800) 555-35-35</a>
                 </li>
                 <li class="panel-contact__item">
                      <span class="icon icon-mail panel-contact__icon"></span>

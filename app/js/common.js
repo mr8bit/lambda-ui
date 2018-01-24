@@ -5,7 +5,6 @@
         var _this = this;
 
         if (document.querySelector(setting.wrap) === null) {
-            console.error("Carousel not fount selector " + setting.wrap);
             return;
         }
 
@@ -619,8 +618,24 @@ function headdropdown() {
     var sidebar = document.getElementsByClassName("js-headDropDown")[0];
     sidebar.classList.toggle("navigation-head-container-body__menu--view");
 }
-document.getElementsByClassName("js-toogleSidebar")[0].addEventListener("click", toogleSibar);
 
-document.getElementsByClassName("navigation-head-container__button")[0].addEventListener("click", headdropdown);
+try {
+    document.getElementsByClassName("js-toogleSidebar")[0].addEventListener("click", toogleSibar);
+}
+catch (err) {
+    console.log(err)
+}
 
-window.addEventListener("scroll", closeSidebar);
+try {
+    document.getElementsByClassName("navigation-head-container__button")[0].addEventListener("click", headdropdown);
+}
+catch (err) {
+    console.log(err);
+}
+
+try {
+    window.addEventListener("scroll", closeSidebar);
+}
+catch (err){
+    console.log(err);
+}
