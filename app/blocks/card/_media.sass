@@ -123,17 +123,26 @@
       &__img
         display: block
         width: 100%
-        height: max-content
+        height: 100%
         object-fit: cover
 
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	.card
+      &-body
+        &__title
+          font-size: 18px
+          line-height: 25px
+      &-head
+        &--event
+          &--middle
+            height: 100px
       &--event
+
         &--middle
-          width: 300px
+          width: calc(100% - 50px)
         &--big
-          width: 300px
+          width: calc(100% - 50px)
       &--mini
         width: 300px
