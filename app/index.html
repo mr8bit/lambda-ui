@@ -35,279 +35,213 @@
 
 </head>
 
+
+
 <body>
+<!-- START Карточки -->
 <div class="container">
     <h2>Карточки новостей</h2>
 </div>
 <div class="container">
-
-    <!--  Карточка новостей средняя -->
-    <div class="card card--middle">
-        <div class="card-head--middle">
-			<span class="card-head__tag card-head__tag--middle">
-				новости
-			</span>
-            <img class="card__img card__img--middle" src="img/card/middle_card_img.png">
+    <div class="card card--main">
+        <div class="card-content card-content--main">
+            <a href="#" class="card__link">
+                <img src="img/card/card_main.png" class="img-responsive">
+            </a>
         </div>
-        <div class="card-body card-body--middle">
-            <div class="card-body__title card-body__title--middle">
-                Отчёт о Sberbank Data Science Day
+        <div class="card-content card-content--main">
+            <div class="card-head--main ">
+                <span class="card-head__tag card-head__tag--main">
+				    новости
+			    </span>
             </div>
-        </div>
-
-        <div class="card-footer card-footer--middle">
-            <div class="card-footer__datetime card-footer__datetime--middle">
-                24 Янв. 15:40
+            <div class="card-body">
+                <a href="#" class="card__link">
+                    <div class="card-body__title card-body__title--main">
+                        eSignTranslator
+                    </div>
+                </a>
+                <div class="card-body__description">
+                    Прибавление в портфеле проектов нашего сообщества! Встречайте -- eSignTranslator. Проект направлен
+                    на людей с ограничениями по слуху или речи, а также с нарушениями обеих систем.
+                </div>
             </div>
-            <div class="card-footer__countcomment card-footer__countcomment--middle">
-                <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                              id="path-1"></path>
-                    </defs>
-                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                            <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
-                            </mask>
-                            <use id="Icon" fill="#D8D8D8" xlink:href="#path-1"></use>
-                            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
-                                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                    <rect x="0" y="0" width="26" height="26"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <span class="card-footer__countcomment__number">12</span>
+            <div class="card-footer card-footer--main">
+                <div class="card-footer__datetime card-footer__datetime--main">
+                    24 Янв. 15:40
+                </div>
+                <div class="card-footer__countcomment card-footer__countcomment--main">
+                    <span class="card-footer__icon  icon icon-comment"></span>
+                    <span class="card-footer__countcomment__number">12</span>
+                </div>
             </div>
         </div>
     </div>
+
+    <!--  Карточка новостей средняя -->
+    <div class="card card--middle">
+        <a href="#" class="card__link">
+            <div class="card-head--middle">
+			<span class="card-head__tag card-head__tag--middle">
+				новости
+			</span>
+                <img class="card__img card__img--middle" src="img/card/middle_card_img.png">
+            </div>
+            <div class="card-body card-body--middle">
+                <div class="card-body__title card-body__title--middle">
+                    Отчёт о Sberbank Data Science Day
+                </div>
+            </div>
+
+            <div class="card-footer card-footer--middle">
+                <div class="card-footer__datetime card-footer__datetime--middle">
+                    24 Янв. 15:40
+                </div>
+                <div class="card-footer__countcomment card-footer__countcomment--middle">
+                    <span class="card-footer__icon  icon icon-comment"></span>
+                    <span class="card-footer__countcomment__number">12</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
     <!--  Карточка новостей большая -->
-    <div class="card card--big">
-        <div class="card-content">
-            <div class="card-head--big">
-            <span class="card-head__tag card-head__tag--big ">
+    <div class="card card--big" style="background-image: url('img/card/big_card_img.png')">
+        <a href="#" class="card__link">
+            <div class="card-content">
+                <div class="card-head--big">
+                    <span class="card-head__tag card-head__tag--big "> перевод </span>
+                </div>
+                <div class="card-body card-body--big">
+                    <div class="card-body__title card-body__title--big">
+                        Эволюция паролей: путеводитель по
+                        аутентификации в современном мире
+                    </div>
+                </div>
+                <div class="card-footer card-footer--big">
+                    <div class="card-footer__datetime card-footer__datetime--big">
+                        24 Янв. 15:40
+                    </div>
+                    <div class="card-footer__countcomment card-footer__countcomment--big">
+                        <span class="card-footer__icon card-footer__icon--white icon icon-comment"></span>
+                        <span class="card-footer__countcomment__number">12</span>
+                    </div>
+                    <div class="card-footer__author">
+                        Тимур Майзенберг
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--  Карточка новостей средняя -->
+    <div class="card card--middle">
+        <a href="#" class="card__link">
+            <div class="card-head--middle">
+			<span class="card-head__tag card-head__tag--middle">
+				новости
+			</span>
+                <img class="card__img card__img--middle" src="img/card/middle_card_img.png">
+            </div>
+            <div class="card-body card-body--middle">
+                <div class="card-body__title card-body__title--middle">
+                    Отчёт о Sberbank Data Science Day
+                </div>
+            </div>
+
+            <div class="card-footer card-footer--middle">
+                <div class="card-footer__datetime card-footer__datetime--middle">
+                    24 Янв. 15:40
+                </div>
+                <div class="card-footer__countcomment card-footer__countcomment--middle">
+                    <span class="card-footer__icon icon icon-comment"></span>
+                    <span class="card-footer__countcomment__number">12</span>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--  Карточка новостей малая -->
+    <div class="card card--small" style="background-image: url('img/card/big_card_img.png')">
+        <a href="#" class="card__link">
+            <div class="card-content" style="position: relative;width:100%;height: 100%;">
+                <div class="card-head--small">
+            <span class="card-head__tag card-head__tag--small ">
 				перевод
 			</span>
-            </div>
-            <div class="card-body card-body--big">
-                <div class="card-body__title card-body__title--big">
-                    Эволюция паролей: путеводитель по аутентификации в современном мире
+                </div>
+                <div class="card-body card-body--small">
+                    <div class="card-body__title card-body__title--small">
+                        Эволюция паролей: путеводитель по аутентификации в современном мире
+                    </div>
+                </div>
+                <div class="card-footer card-footer--big">
+                    <div class="card-footer__datetime card-footer__datetime--small">
+                        24 Янв. 15:40
+                    </div>
+                    <div class="card-footer__countcomment card-footer__countcomment--small">
+                        <span class="card-footer__icon card-footer__icon--white icon icon-comment"></span>
+                        <span class="card-footer__countcomment__number">12</span>
+                    </div>
                 </div>
             </div>
-            <div class="card-footer card-footer--big">
-                <div class="card-footer__datetime card-footer__datetime--big">
-                    24 Янв. 15:40
-                </div>
-                <div class="card-footer__countcomment card-footer__countcomment--big">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                                  id="path-1"></path>
-                        </defs>
-                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <use id="Icon" fill="#fff" xlink:href="#path-1"></use>
-                                <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#fff">
-                                    <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                        <rect x="0" y="0" width="26" height="26"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="card-footer__countcomment__number">12</span>
-                </div>
-                <div class="card-footer__author">
-                    Тимур Майзенберг
-                </div>
-            </div>
-        </div>
-        <img class="card__img" src="img/card/big_card_img.png">
-    </div>
-    <!--  Карточка новостей средняя -->
-    <div class="card card--middle">
-        <div class="card-head--middle">
-			<span class="card-head__tag card-head__tag--middle">
-				новости
-			</span>
-            <img class="card__img card__img--middle" src="img/card/middle_card_img.png">
-        </div>
-        <div class="card-body card-body--middle">
-            <div class="card-body__title card-body__title--middle">
-                Отчёт о Sberbank Data Science Day
-            </div>
-        </div>
-
-        <div class="card-footer card-footer--middle">
-            <div class="card-footer__datetime card-footer__datetime--middle">
-                24 Янв. 15:40
-            </div>
-            <div class="card-footer__countcomment card-footer__countcomment--middle">
-                <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                     xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                              id="path-1"></path>
-                    </defs>
-                    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                            <mask id="mask-2" fill="white">
-                                <use xlink:href="#path-1"></use>
-                            </mask>
-                            <use id="Icon" fill="#D8D8D8" xlink:href="#path-1"></use>
-                            <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#D8D8D8">
-                                <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                    <rect x="0" y="0" width="26" height="26"></rect>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <span class="card-footer__countcomment__number">12</span>
-            </div>
-        </div>
+        </a>
     </div>
 
+    <!--  Карточка новостей малая -->
+    <div class="card card--small" style="background-image: url('img/card/big_card_img.png')">
+        <a href="#" class="card__link">
+            <div class="card-content" style="position: relative;width:100%;height: 100%;">
+                <div class="card-head--small">
+            <span class="card-head__tag card-head__tag--small ">
+				перевод
+			</span>
+                </div>
+                <div class="card-body card-body--small">
+                    <div class="card-body__title card-body__title--small">
+                        Эволюция паролей: путеводитель по аутентификации в современном мире
+                    </div>
+                </div>
+                <div class="card-footer card-footer--big">
+                    <div class="card-footer__datetime card-footer__datetime--small">
+                        24 Янв. 15:40
+                    </div>
+                    <div class="card-footer__countcomment card-footer__countcomment--small">
+                        <span class="card-footer__icon card-footer__icon--white icon icon-comment"></span>
+                        <span class="card-footer__countcomment__number">12</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
 
     <!--  Карточка новостей малая -->
-    <div class="card card--small">
-        <div class="card-content card-content--small">
-            <div class="card-head--small">
+    <div class="card card--small" style="background-image: url('img/card/big_card_img.png')">
+        <a href="#" class="card__link">
+            <div class="card-content" style="position: relative;width:100%;height: 100%;">
+                <div class="card-head--small">
             <span class="card-head__tag card-head__tag--small ">
-				новости
+				перевод
 			</span>
-            </div>
-            <div class="card-body card-body--small">
-                <div class="card-body__title card-body__title--small">
-                    Хакатон Технологии Возможностей 2017
+                </div>
+                <div class="card-body card-body--small">
+                    <div class="card-body__title card-body__title--small">
+                        Эволюция паролей: путеводитель по аутентификации в современном мире
+                    </div>
+                </div>
+                <div class="card-footer card-footer--big">
+                    <div class="card-footer__datetime card-footer__datetime--small">
+                        24 Янв. 15:40
+                    </div>
+                    <div class="card-footer__countcomment card-footer__countcomment--small">
+                        <span class="card-footer__icon card-footer__icon--white icon icon-comment"></span>
+                        <span class="card-footer__countcomment__number">12</span>
+                    </div>
                 </div>
             </div>
-            <div class="card-footer card-footer--big">
-                <div class="card-footer__datetime card-footer__datetime--big">
-                    24 Янв. 15:40
-                </div>
-                <div class="card-footer__countcomment card-footer__countcomment--big">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                                  id="path-1"></path>
-                        </defs>
-                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <use id="Icon" fill="#fff" xlink:href="#path-1"></use>
-                                <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#fff">
-                                    <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                        <rect x="0" y="0" width="26" height="26"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="card-footer__countcomment__number">12</span>
-                </div>
-            </div>
-        </div>
-        <img class="card__img card__img--small" src="img/card/small_card_img.png">
+        </a>
     </div>
-    <!--  Карточка новостей малая -->
-    <div class="card card--small">
-        <div class="card-content card-content--small">
-            <div class="card-head--small">
-            <span class="card-head__tag card-head__tag--small ">
-				новости
-			</span>
-            </div>
-            <div class="card-body card-body--small">
-                <div class="card-body__title card-body__title--small">
-                    Хакатон Технологии Возможностей 2017
-                </div>
-            </div>
-            <div class="card-footer card-footer--big">
-                <div class="card-footer__datetime card-footer__datetime--big">
-                    24 Янв. 15:40
-                </div>
-                <div class="card-footer__countcomment card-footer__countcomment--big">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                                  id="path-1"></path>
-                        </defs>
-                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <use id="Icon" fill="#fff" xlink:href="#path-1"></use>
-                                <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#fff">
-                                    <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                        <rect x="0" y="0" width="26" height="26"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="card-footer__countcomment__number">12</span>
-                </div>
-            </div>
-        </div>
-        <img class="card__img card__img--small" src="img/card/small_card_img.png">
-    </div>
-    <!--  Карточка новостей малая -->
-    <div class="card card--small">
-        <div class="card-content card-content--small">
-            <div class="card-head--small">
-            <span class="card-head__tag card-head__tag--small ">
-				новости
-			</span>
-            </div>
-            <div class="card-body card-body--small">
-                <div class="card-body__title card-body__title--small">
-                    Хакатон Технологии Возможностей 2017
-                </div>
-            </div>
-            <div class="card-footer card-footer--big">
-                <div class="card-footer__datetime card-footer__datetime--big">
-                    24 Янв. 15:40
-                </div>
-                <div class="card-footer__countcomment card-footer__countcomment--big">
-                    <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <defs>
-                            <path d="M24,9 L22,9 L22,18 L9,18 L9,20 C9,20.55 9.45,21 10,21 L21,21 L25,25 L25,10 C25,9.45 24.55,9 24,9 L24,9 Z M20,15 L20,6 C20,5.45 19.55,5 19,5 L6,5 C5.45,5 5,5.45 5,6 L5,20 L9,16 L19,16 C19.55,16 20,15.55 20,15 L20,15 Z"
-                                  id="path-1"></path>
-                        </defs>
-                        <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="3.-Icons/ic_forum" transform="translate(-5.000000, -5.000000)">
-                                <mask id="mask-2" fill="white">
-                                    <use xlink:href="#path-1"></use>
-                                </mask>
-                                <use id="Icon" fill="#fff" xlink:href="#path-1"></use>
-                                <g id="5.-Colors/Gray-85" mask="url(#mask-2)" fill="#fff">
-                                    <g transform="translate(2.000000, 2.000000)" id="Gray-85">
-                                        <rect x="0" y="0" width="26" height="26"></rect>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </svg>
-                    <span class="card-footer__countcomment__number">12</span>
-                </div>
-            </div>
-        </div>
-        <img class="card__img card__img--small" src="img/card/small_card_img.png">
-    </div>
+
     <!--  Карточка интересной информации -->
     <div class="card card--number">
         <div class="card-head--number">
@@ -323,19 +257,177 @@
         </div>
     </div>
 
+    <div class="card card--event--middle">
+        <div class="card-head--event--middle">
+			<span class="card-head__tag card-head__tag--middle card-head__tag--transparent ">
+				лекции
+			</span>
+            <img class="card__img card__img--middle" src="img/card/event_middle.png">
+        </div>
+        <div class="card-footer card-footer--event--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Января 15:40
+            </div>
+        </div>
+        <div class="card-body card-body--event--middle">
+            <a class="card__link" href="#">
+                <div class="card-body__title card-body__title--event--middle">
+                    Машинное обучение #3 <br>
+                    Методы Оптимизации.
+                </div>
+            </a>
+        </div>
+        <div class="card-footer card-footer--event--middle">
+            <span>
+                <a href="#" class="card-footer__more">
+                Подробнее
+                </a>
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <div class="card card--event--big" style="background-image: url('img/card/event_big.png')">
+
+        <div class="card-content card-content--event--big">
+            <div class="card-head--event--middle">
+            <span class="card-head__tag card-head__tag--middle card-head__tag--transparent ">
+				перевод
+			</span>
+            </div>
+            <div class="card-footer card-footer--event--middle">
+                <div class="card-footer__datetime card-footer__datetime--big">
+                    24 Января 15:40
+                </div>
+            </div>
+            <div class="card-body card-body--event--middle">
+                <a href="#" class="card__link">
+                    <div class="card-body__title card-body__title--event--big">
+                        Машинное обучение #3 <br>
+                        Методы Оптимизации.
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-footer card-footer--event--middle">
+                    <span>
+                        <a href="#" class="btn btn--gray-30 btn--extra-small ">
+                            Подробнее
+                        </a>
+                    </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="card card--event--middle">
+        <div class="card-head--event--middle">
+			<span class="card-head__tag card-head__tag--middle card-head__tag--transparent ">
+				лекции
+			</span>
+            <img class="card__img card__img--middle" src="img/card/event_middle.png">
+        </div>
+        <div class="card-footer card-footer--event--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Января 15:40
+            </div>
+        </div>
+        <div class="card-body card-body--event--middle">
+            <a class="card__link" href="#">
+                <div class="card-body__title card-body__title--event--middle">
+                    Машинное обучение #3 <br>
+                    Методы Оптимизации.
+                </div>
+            </a>
+        </div>
+        <div class="card-footer card-footer--event--middle">
+            <span>
+                <a href="#" class="card-footer__more">
+                Подробнее
+                </a>
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <div class="card card--mini">
+        <div class="card-head--event--mini">
+			<span class="card-head__tag card-head__tag--middle ">
+				лекции
+			</span>
+            <img class="card__img card__img--mini" src="img/card/event_middle.png">
+        </div>
+        <div class="card-body card-body--mini">
+            <div class="card-body__title card-body__title--mini">
+                Эволюция паролей:путеводитель по аутентификации…
+            </div>
+        </div>
+
+        <div class="card-footer card-footer--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Янв. 15:40
+            </div>
+            <div class="card-footer__countcomment card-footer__countcomment--middle">
+                <span class="icon icon-close-comment-24--gray"></span>
+                <span class="card-footer__countcomment__number">12</span>
+            </div>
+        </div>
+    </div>
+
 </div>
+<!-- END Карточки  -->
+
+<!-- START Навигация  -->
 <div class="container">
     <h2>Навигация</h2>
 </div>
-<div class="navigation-head navigation-head--fluid">
+<nav class="navigation-breadcrumb">
+    <ol class="navigation-breadcrumb-list">
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Главная</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Новости</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">Sberbank Data Science Day 2017</li>
+    </ol>
+</nav>
+<nav class="navigation-head navigation-head--fluid">
     <div class="navigation-head-container">
         <div class="navigation-head-container-body navigation-head-container-body--fluid">
             <h4 class="navigation-head-container__title ">Публикации</h4>
         </div>
     </div>
-</div>
-
-<div class="navigation-head ">
+</nav>
+<nav class="navigation-head navigation-head--fluid">
+    <div class="navigation-head-container">
+        <div class="navigation-head-container-body navigation-head-container-body--fluid">
+            <h4 class="navigation-head-container__title ">Публикации</h4>
+            <ul class="navigation-head-container-body__menu">
+                <li class="navigation-head-container-body__menu__item navigation-head-container-body__menu__item--active ">
+                    Все
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    MeetUp
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Лекции
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Встречи
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Календарь
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navigation-head ">
     <div class="navigation-head-container navigation-head-container--block">
         <div class="navigation-head-container-body">
             <h4 class="navigation-head-container__title">Мероприятия</h4>
@@ -360,12 +452,357 @@
 
 
     </div>
+</nav>
+<nav class="navigation-card">
+    <div class="navigation-card-container">
+        <div class="navigation-card-container__menu">
+            <div class="navigation-card-container__menu__sidebar">
+                <span class="icon icon-menu"></span>
+            </div>
+            <ul class="navigation-card-container__menu__list">
+                <li class="navigation-card-container__menu__list__item">
+                    <a class="navigation-card-container__menu__list__item__link" href="#">Главная</a>
+                </li>
+                <li class="navigation-card-container__menu__list__item">
+                    <a class="navigation-card-container__menu__list__item__link" href="#">Пубиликации</a>
+                </li>
+                <li class="navigation-card-container__menu__list__item">
+                    <a class="navigation-card-container__menu__list__item__link" href="#">Мероприятия</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navigation-card-container__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="97px"
+                 height="16px" viewBox="0 0 97 16" version="1.1">
+                <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700"
+                   font-family="Roboto-Black, Roboto" letter-spacing="1.6500001" font-size="22">
+                    <g id="Navigate-Card" fill="#4D4D4D">
+                        <g>
+                            <g id="content">
+                                <text id="LAMBDA">
+                                    <tspan y="16">LAMBDA</tspan>
+                                </text>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="navigation-card-container__social">
+            <ul class="navigation-card-container__social__list">
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div style="margin: 30px 0">
+    <nav class="navigation-card">
+        <div class="navigation-card-container">
+            <div class="navigation-card-container__menu navigation-card-container__menu--width_logo">
+                <div class="navigation-card-container__menu__sidebar">
+                    <span class="icon icon-menu"></span>
+                </div>
+                <div class="navigation-card-container__menu__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="97px"
+                         height="16px" viewBox="0 0 97 16" version="1.1">
+                        <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700"
+                           font-family="Roboto-Black, Roboto" letter-spacing="1.6500001" font-size="22">
+                            <g id="Navigate-Card" fill="#4D4D4D">
+                                <g>
+                                    <g id="content">
+                                        <text id="LAMBDA">
+                                            <tspan y="16">LAMBDA</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+            <div class="navigation-card-container__menu navigation-card-container__menu--center ">
+                <ul class="navigation-card-container__menu__list navigation-card-container__menu__list--center">
+                    <li class="navigation-card-container__menu__list__item">
+                        <a class="navigation-card-container__menu__list__item__link" href="#">Главная</a>
+                    </li>
+                    <li class="navigation-card-container__menu__list__item">
+                        <a class="navigation-card-container__menu__list__item__link" href="#">Пубиликации</a>
+                    </li>
+                    <li class="navigation-card-container__menu__list__item">
+                        <a class="navigation-card-container__menu__list__item__link" href="#">Мероприятия</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="navigation-card-container__social">
+                <ul class="navigation-card-container__social__list">
+                    <li class="navigation-card-container__social__list__item">
+                        <a class="navigation-card-container__social__list__item__link" href="#">
+                            <span class="navigation-card-container__social__list__item__link__icon icon icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="navigation-card-container__social__list__item">
+                        <a class="navigation-card-container__social__list__item__link" href="#">
+                            <span class="navigation-card-container__social__list__item__link__icon icon icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div style="margin: 30px 0">
+    <nav class="navigation-card">
+        <div class="navigation-card-container">
+            <div class="navigation-card-container__menu">
+                <div class="navigation-card-container__menu__sidebar">
+                    <span class="icon icon-menu"></span>
+                </div>
+
+            </div>
+            <div class="navigation-card-container__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="97px"
+                     height="16px" viewBox="0 0 97 16" version="1.1">
+                    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700"
+                       font-family="Roboto-Black, Roboto" letter-spacing="1.6500001" font-size="22">
+                        <g id="Navigate-Card" fill="#4D4D4D">
+                            <g>
+                                <g id="content">
+                                    <text id="LAMBDA">
+                                        <tspan y="16">LAMBDA</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="navigation-card-container__social">
+                <ul class="navigation-card-container__social__list">
+                    <li class="navigation-card-container__social__list__item">
+                        <a class="navigation-card-container__social__list__item__link" href="#">
+                            <span class="navigation-card-container__social__list__item__link__icon icon icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="navigation-card-container__social__list__item">
+                        <a class="navigation-card-container__social__list__item__link" href="#">
+                            <span class="navigation-card-container__social__list__item__link__icon icon icon-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<!-- END Навигация  -->
+
+
+<!-- START Навигация  -->
+<div class="container">
+    <h2>Подвал</h2>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-container-item">
+            <div class="footer-container-item__logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="97px"
+                     height="16px" viewBox="0 0 97 16" version="1.1">
+                    <g id="Главная" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-weight="700"
+                       font-family="Roboto-Black, Roboto" letter-spacing="1.6500001" font-size="22">
+                        <g id="Navigate-Card" fill="#4D4D4D">
+                            <g>
+                                <g id="content">
+                                    <text id="LAMBDA">
+                                        <tspan y="16">LAMBDA</tspan>
+                                    </text>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <div class="footer-container-item__policy">
+                Privacy Policy
+            </div>
+            <div class="footer-container-item__policy">
+                © 2017 Lambda Co.
+            </div>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Навигация</div>
+            <ul class="footer-container-item__menu">
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Главная</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Публикации</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Мероприятия</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Партнеры</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">О нас</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Контакты</div>
+            <div class="footer-container-item__contacts">
+                <a class="footer-container-item__contacts__phone" href="#">8 800 555 35 35</a>
+                <a class="footer-container-item__contacts__mail" href="#">info@lambda-it.ru</a>
+            </div>
+            <div class="footer-container-item__border"></div>
+            <div class="footer-container-item__social">
+                <ul class="footer-container-item__social__list">
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-instagram"></span>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END Навигация  -->
+
+<div class="container">
+    <h2>Мероприятия</h2>
+</div>
+<div class="container">
+
+</div>
+<div class="container">
+    <div class="event-head" style="background-image: url('img/event/event_head.png')">
+        <div class="event-head-content">
+            <div class="event-head-content-head">
+                <ul class="event-head-content-head__list">
+                    <li class="event-head-content-head__list__item"><span
+                            class="icon icon-clock  icon--15-right"></span> <span
+                            class="event-head-content-head__list__item__text">23 Ноября 2017, 17:00</span></li>
+                    <li class="event-head-content-head__list__item">
+                        <span class="icon icon-place icon--15-right"></span>
+                        <span class="event-head-content-head__list__item__text">МАИ 24 корпус, 107 кафедра, 508к</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="event-head-content-body">
+                <h1 class="event-head-content-body__title">Lambda Analysis #1</h1>
+                <a class="btn btn--gray-30 btn--small btn--rounded">Я пойду</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="event-panel event-panel--main">
+        <div class="event-panel-head">
+            <div class="event-panel-head__title">
+                Описание
+            </div>
+        </div>
+        <div class="event-panel-body">
+            <p>На базе Lambda начинается новый курс - Lambda Analysis!  <br>
+                Мы встретимся с кучей данных, разберемся в<br>
+                устройстве СУБД, а также дойдём до функционального анализа данных. <br>
+                Итак, на первой встрече:
+                <br> Начнём серьёзно ковыряться с SQL. <br>
+                Разобъемся на несколько команд. <br>
+                Подумаем вместе, что в наших силах. <br>
+                Ну и просто заново познакомимся друг с другом!<br>
+                 Нас ждёт целое и увлекательное приключение в мир данных, и закончим мы с вами это приключение
+                несколькими интересными проектами!<br>
+                 А потом всем будете хвастать, что стали DBD,
+                кхе-кхе   <br><br>
+                P.S. Однако есть вероятность, что занятие будет отменено по техническим причинам. Точная информация
+                об этом будет в течение пятницы. Правда не всё так грустно, т.к. даже при неудачном исходе событий мы
+                всё
+                равно выложим всё в онлайн!</p>
+        </div>
+    </div>
+    <div class="event-panel event-panel--sidebar">
+        <div class="event-panel-head">
+            <div class="event-panel-head__title">
+                Информация
+            </div>
+        </div>
+        <div class="event-panel-body event-panel-body--side-bar">
+            <ul class="event-panel-body__list">
+                <li class="event-panel-body__list__item ">
+                    <span class="event-panel-body__list__item__icon icon icon-clock-solid icon--15-right"></span>
+                    <span>60 мин.</span>
+                </li>
+                <li class="event-panel-body__list__item">
+                    <span class="event-panel-body__list__item__icon icon icon-wifi icon--15-right"></span>
+                    <span>Есть</span>
+                </li>
+                <li class="event-panel-body__list__item">
+                    <span class="event-panel-body__list__item__icon icon icon-notebook icon--15-right"></span>
+                    <span>Да</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Подвал</h2>
+</div>
+
+<div class="container" style="margin: 30px auto; padding: 0 30px">
+    <button class="btn btn--primary btn--big btn--rounded">Сохранить</button>
+    <button class="btn btn--primary btn--big ">Сохранить</button>
+    <button class="btn btn--secondary btn--big ">Сохранить</button>
+    <button class="btn btn--ghost btn--big btn--rounded ">Сохранить</button>
+    <button class="btn btn--gray-30 btn--big ">Сохранить</button>
+    <button class="btn btn--gray-30 btn--big btn--rounded ">Сохранить</button>
+</div>
+
+<div class="container" style="margin: 30px auto; padding: 0 30px">
+    <button class="btn btn--primary btn--default btn--rounded">Сохранить</button>
+    <button class="btn btn--primary btn--default ">Сохранить</button>
+    <button class="btn btn--secondary btn--default ">Сохранить</button>
+    <button class="btn btn--secondary btn--default btn--rounded ">Сохранить</button>
+    <button class="btn btn--ghost btn--default btn--rounded ">Сохранить</button>
+</div>
+<div class="container" style="margin: 30px auto; padding: 0 30px">
+    <button class="btn btn--primary btn--small btn--rounded">Сохранить</button>
+    <button class="btn btn--primary btn--small ">Сохранить</button>
+    <button class="btn btn--secondary btn--small ">Сохранить</button>
+    <button class="btn btn--secondary btn--small btn--rounded ">Сохранить</button>
+    <button class="btn btn--ghost btn--small btn--rounded ">Сохранить</button>
+</div>
+
+<div class="container" style="margin: 30px auto; padding: 0 30px">
+    <button class="btn btn--primary btn--extra-small btn--rounded">Сохранить</button>
+    <button class="btn btn--primary btn--extra-small ">Сохранить</button>
+    <button class="btn btn--secondary btn--extra-small ">Сохранить</button>
+    <a class="btn btn--gray-30 btn--extra-small " href="#">Сохранить</a>
+    <button class="btn btn--secondary btn--extra-small btn--rounded ">Сохранить</button>
+    <button class="btn btn--ghost btn--extra-small btn--rounded ">Сохранить</button>
 </div>
 
 
-
-
 <link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="libs/normalize-css/normalize.css">
 <script src="js/scripts.min.js"></script>
 
 </body>

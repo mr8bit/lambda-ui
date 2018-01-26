@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+    <style>body {
+        opacity: 0;
+        overflow-x: hidden;
+    }
+
+    html {
+        background-color: #fff;
+    }</style>
+
+</head>
+
+<body>
+
+
+<nav class="navigation-card">
+    <div class="navigation-card-container">
+        <div class="navigation-card-container__menu">
+            <div class="navigation-card-container__menu__sidebar js-toogleSidebar">
+                <span class="icon icon-menu"></span>
+            </div>
+        </div>
+        <div class="navigation-card-container__logo">
+            <span class="icon icon-logo navigation-card-container__brand"> </span>
+        </div>
+        <div class="navigation-card-container__social">
+            <ul class="navigation-card-container__social__list">
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-instagram"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-vk"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-container__social__list__item">
+                    <a class="navigation-card-container__social__list__item__link" href="#">
+                        <span class="navigation-card-container__social__list__item__link__icon icon icon-github"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navigation-card-sidebar js-SideBar ">
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navigation-breadcrumb">
+    <ol class="navigation-breadcrumb-list">
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Главная</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Новости</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">Хакатон Технологии Возможностей 2017</li>
+    </ol>
+</nav>
+
+
+<div class="article-header-card" style="background-image: url('img/article/media/head.jpg')">
+    <div class="article-header-card-content">
+        <div class="article-header-card-content-left">
+            <div class="article-header-card-content-left-body">
+                <div class="article-header-card-content-left-body-head">
+                    <span class="label label--danger label--large">ПЕРЕВОД</span>
+                    <span class="article-header-card-content-left-body-head_date">24 Янв. 2018  14:34</span>
+                </div>
+                <h1 class="article-header-card-content-left-body__title">
+                    Хакатон Технологии Возможностей 2017
+                </h1>
+                <div class="article-header-card-content-left-body__line"></div>
+            </div>
+            <div class="article-header-card-content-left-footer">
+                <span class="article-header-card-content-left-footer-info">
+                    <span class="article-header-card-content-left-footer-info__icon icon icon-eye"></span>
+                    <span class="article-header-card-content-left-footer-info__title">275</span>
+                </span>
+                <span class="article-header-card-content-left-footer-info">
+                    <span class="article-header-card-content-left-footer-info__icon icon icon-comment"></span>
+                    <span class="article-header-card-content-left-footer-info__title">12</span>
+
+                </span>
+                <span class="article-header-card-content-left-footer-info">
+                    <span class="article-header-card-content-left-footer-info__icon icon icon-user"></span>
+                    <span class="article-header-card-content-left-footer-info__title">Тимур Майзенберг</span>
+                </span>
+            </div>
+        </div>
+
+        <div class="article-header-card-content-right">
+            <div class="article-header-card-content-right-info">
+                <a class="btn btn--circle btn--gray-30"><span class="icon icon-share icon-flip"></span></a>
+                <span class="article-header-card-content-right-info__num">123</span>
+            </div>
+            <div class="article-header-card-content-right-info">
+                <a class="btn btn--circle btn--gray-30"><span class="icon icon-favorite"></span></a>
+                <span class="article-header-card-content-right-info__num">123</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article-body">
+
+    <!-- START Текст -->
+    <div class="article-body__content">
+        <h3>Hack it in 36 hours</h3>
+        <p>Друзья! Админы наконец отдохнули нет и нашли силы написать мини-обзор о недавно прошедшем хакатоне Технологии
+            Возможностей в Сколково, в котором приняла участие и наша команда 😎</p>
+        <p>
+            Было не просто, но за 2 дня было создано многое. В основе нашего проекта лежал концепт устройства,
+            переводящего Русский Жестовый Язык в звуковую дорожку. Устройство должно (на данном этапе) состоять из
+            браслета, способного улавливать сокращения мыщц руки, передавать информацию на смартфон и возвращать
+            информацию в звуковом формате.
+        </p>
+    </div>
+    <!-- END Текст -->
+
+    <!-- START Галлерея -->
+    <div class="gallery">
+        <div class="gallery__item">
+            <span class="gallery__view btn btn--gray-30 btn--circle js-fullview"
+                  data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                <span class="icon icon-search"></span>
+            </span>
+            <span class="gallery__title">Первенство России по Кибатлетике</span>
+            <img class="gallery__img" src="img/article/media/1-compressed.jpg">
+        </div>
+        <div class="gallery__item">
+            <span class="gallery__view btn btn--gray-30 btn--circle js-fullview"
+                  data-image="../../img/article/media/1.jpg" data-title="Первенство России по Кибатлетике">
+                <span class="icon icon-search"></span>
+            </span>
+            <span class="gallery__title">Первенство России по Кибатлетике</span>
+            <img class="gallery__img" src="img/article/media/1.jpg">
+        </div>
+        <div class="gallery__item">
+            <span class="gallery__view gallery__view--lg btn btn--gray-30 btn--circle js-fullview"
+                  data-image="../../img/article/media/1.jpg" data-title="Первенство России по Кибатлетике">
+                <span class="icon icon-search"></span>
+            </span>
+            <span class="gallery__title gallery__title--lg">Первенство России по Кибатлетике</span>
+            <img class="gallery__img" src="img/article/media/3.jpg">
+        </div>
+    </div>
+    <!-- END Галлерея -->
+
+    <!-- START Видео -->
+    <iframe src="https://www.youtube.com/embed/oQ0Siiyakn4" frameborder="0" gesture="media"
+            allow="encrypted-media" allowfullscreen></iframe>
+    <!-- END Видео -->
+
+    <!-- START Текст -->
+    <div class="article-body__content">
+
+        <p>К сожалению, нам не удалось войти в призовую тройку, но стоит отметить, что нам есть чем гордиться: наш
+            проект оказался единственным, который одновременно был зарекомендован на программу акселерации проекта
+            "Технопарка Сколково", а так же был приглашен исполнительным директором отраслевого союза "Нейронет"
+            Семеновым Александром на форум "Надежда На Технологии" для вручения специальных наград. Это отличный повод
+            развивать наш проект в дальнейшем!</p>
+        <p>
+            Немного статистики:
+        </p>
+        <ul>
+            <li>в пике количество участников нашей команды достигало 13 человек;</li>
+            <li>за все время хакатона было выпито примерно по 1.5 - 2 литра кофе на одного участника;</li>
+            <li>для управления исходниками мы использовали Gitlab, в котором за 30 часов произошло:</li>
+
+                <ul>
+                    <li>создание 5 проектов</li>
+                    <li>130 коммитов</li>
+                    <li>96 автоматических сборок проектов (76 удачных)</li>
+                    <li>~ 2266 строчки кода на 3 разных языках %)</li>
+                </ul>
+
+        </ul>
+
+
+
+
+
+
+
+        <p>
+            Спасибо всем, кто принял активное участие в проекте, вы няшки ^_^
+        </p>
+    </div>
+    <!-- END Текст -->
+
+    <!-- START Карусель -->
+    <div class="carousel">
+        <div class="carousel-control__left">
+            <button class="btn btn--circle btn--secondary js-carousel__prev">
+                <span class="icon icon-arrow-left"></span>
+            </button>
+        </div>
+        <div class="carousel-area js-carousel">
+            <div class="carousel-area__wrap js-carousel__wrap">
+                <div class="carousel-area__item">
+                    <span class="carousel-area__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+                    <img src="img/article/media/4.jpg" alt=""
+                         class="carousel-area__img">
+                    <span class="carousel-area__title">Science Day</span>
+                </div>
+                <div class="carousel-area__item">
+<span class="carousel-area__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+                    <img src="img/article/media/5.jpg" alt=""
+                         class="carousel-area__img">
+                    <span class="carousel-area__title">Science Day</span>
+                </div>
+                <div class="carousel-area__item">
+                    <span class="carousel-area__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+                    <img src="img/article/media/6.jpg" alt=""
+                         class="carousel-area__img">
+                    <span class="carousel-area__title">Science Day</span>
+                </div>
+                <div class="carousel-area__item">
+                    <span class="carousel-area__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+                    <img src="img/article/media/7.jpg" alt=""
+                         class="carousel-area__img">
+                    <span class="carousel-area__title">Science Day</span>
+                </div>
+                <div class="carousel-area__item">
+                    <span class="carousel-area__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+                    <img src="img/article/media/8.jpg" alt=""
+                         class="carousel-area__img">
+                    <span class="carousel-area__title">Science Day</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="carousel-control__right">
+            <button class="btn btn--circle btn--secondary js-carousel__next">
+                <span class="icon icon-arrow-right"></span>
+            </button>
+        </div>
+    </div>
+    <!-- END Карусель -->
+
+
+    <!-- START Текст -->
+    <div class="article-body__content">
+
+        <p>
+            Небольшой P.S.:
+        </p>
+        <blockquote>
+            Вообще, я в первый раз поехал на хакатон. Готовился всю неделю и к выходным был уже достаточно уставший и
+            озверевший. Но несмотря на это наша команда смогла добиться серьезных результатов за довольно короткий срок
+            - мы доделали рабочий прототип самого устройства, реализовали серверную часть проекта с нейронной сетью и на
+            40% написали android-приложение. Практически все проблемы и challenges, с которыми мы столкнулись, были для
+            нас в новинку (для меня Java уж точно). Я впервые увидел, как слаженная работа команды, болеющих за идею,
+            позволяет добиться больших результатов за такой короткий срок.<br><br>
+            Хочется поблагодарить всех участников нашей команды, в том числе тех, кто присоединился к нам уже на
+            хакатоне - студентов МИФИ, за упорную работу и терпимость в мой адрес. Ребята мне даже кофе ночью таскали,
+            не могу выразить, насколько приятно.<br><br>
+            Кроме всего, хочу сказать спасибо людям, вносивших огромный вклад в проект где-то за несколько дней до
+            хакатона: ребятам из BitronicsLab за предоставленные сенсоры и электоры (что бы мы без вас делали); Семенову
+            Александру и отраслевому фонду Нейронет за материальную поддержку и за то, что поверили в наш проект на
+            экспертном совете; Совалову Роману за помощь в 3d-моделировании корпусных деталей нашего браслета (которые
+            на хакатоне успели прозвать "гробики для микросхем" ;) ); Майзенбергу Леониду за неоценимый вклад в
+            подготовку электронной базы проекта, пайке плат и убийство усилителей; моей замечательной девушке Надежде за
+            моральную поддержку в трудное время.<br><br>
+
+            Ну и конечно большое спасибо организаторам хакатона - центру Технологии Возможностей (которые уже полтора
+            года терпят мою нерасторопность) и Сколково за организацию, кофе и пирожки.<br><br>
+
+            Уверен, что этот хакатон станет решающим событием для нашего проекта и замотивирует множество членов
+            сообщества Lambda на участие в подобных мероприятиях. Это очень круто и весело, поверьте.<br><br><br>
+            Админ всея Lambda, a.k.a. @murych.
+        </blockquote>
+
+    </div>
+    <!-- END Текст -->
+
+    <!-- START Изображение -->
+    <div class="image">
+        <span class="image__view btn btn--gray-30 btn--circle js-fullview"
+                        data-image="../../img/article/media/1-compressed.jpg" data-title="Первенство России по Кибатлетике">
+                        <span class="icon icon-search"></span>
+                    </span>
+        <img src="img/article/media/9.jpg" alt=""
+             class="image__img">
+        <span class="image__title">Science Day</span>
+    </div>
+    <!-- END Изображение -->
+
+</div>
+
+<!-- START ARTICLE FOOTER -->
+<div class="article-footer">
+    <div class="article-footer__top">
+        <div class="article-footer-author">
+            <img src="img/article/avatar.png" class="article-footer-author__avatar">
+            <div class="article-footer-author__info">
+                <span class="article-footer-author__name">Тимур Майзенберг</span>
+                <span class="article-footer-author__position">Основатель</span>
+            </div>
+        </div>
+        <div class="article-footer-about_article">
+            <div class="article-footer-about_article__item">
+                <a class="article-footer-about_article__link" href="#">
+                    <span class="icon icon-faovrite-solid"></span>
+                </a>
+                <span class="article-footer-about_article__num">122</span>
+            </div>
+            <div class="article-footer-about_article__item">
+                <span class="article-footer-about_article__icon icon icon-eye"></span>
+                <span class="article-footer-about_article__num">122</span>
+            </div>
+            <div class="article-footer-about_article__item">
+                <span class="article-footer-about_article__icon icon icon-comment"></span>
+                <span class="article-footer-about_article__num">122</span>
+            </div>
+        </div>
+        <div class="article-footer-go_top">
+            <span class="btn btn--ghost btn--default article-footer-go_top__btn">
+                <span class="article-footer-go_top__name">Наверх</span>
+                <span class="icon icon-arrow-left icon-rotate-90"></span>
+            </span>
+        </div>
+    </div>
+    <div class="article-footer__bottom">
+        <div class="article-footer-tags">
+            <a href="#" class="article-footer-tags__link label label--default">codegasm</a>
+            <a href="#" class="article-footer-tags__link label label--default">code</a>
+            <a href="#" class="article-footer-tags__link label label--default">ML</a>
+            <a href="#" class="article-footer-tags__link label label--default">python</a>
+        </div>
+        <div class="article-footer-share">
+            <span class="article-footer-share__name">Поделиться:</span>
+            <div  class="article-footer-share__social">
+               <a href="#" class="article-footer-share__link">
+                   <span class="article-footer-share__icon icon icon-twitter"></span>
+               </a>
+                <span class="article-footer-share__num">10</span>
+            </div>
+            <div  class="article-footer-share__social">
+               <a href="#" class="article-footer-share__link">
+                   <span class="article-footer-share__icon icon icon-vk"></span>
+               </a>
+                <span class="article-footer-share__num">10</span>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- END ARTICLE FOOTER -->
+
+
+<div class="head">
+    <h3 class="head__title">Популярные статьи</h3>
+    <div class="head__line"></div>
+</div>
+
+<div class="container">
+    <div class="card card--mini">
+        <div class="card-head--event--mini">
+			<span class="card-head__tag card-head__tag--middle ">
+				лекции
+			</span>
+            <img class="card__img card__img--mini" src="img/card/event_middle.png">
+        </div>
+        <div class="card-body card-body--mini">
+            <div class="card-body__title card-body__title--mini">
+                Эволюция паролей:путеводитель по аутентификации…
+            </div>
+        </div>
+
+        <div class="card-footer card-footer--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Янв. 15:40
+            </div>
+            <div class="card-footer__countcomment card-footer__countcomment--middle">
+                <span class="icon icon-close-comment-24--gray"></span>
+                <span class="card-footer__countcomment__number">12</span>
+            </div>
+        </div>
+    </div>
+    <div class="card card--mini">
+        <div class="card-head--event--mini">
+			<span class="card-head__tag card-head__tag--middle ">
+				лекции
+			</span>
+            <img class="card__img card__img--mini" src="img/card/event_middle.png">
+        </div>
+        <div class="card-body card-body--mini">
+            <div class="card-body__title card-body__title--mini">
+                Эволюция паролей:путеводитель по аутентификации…
+            </div>
+        </div>
+
+        <div class="card-footer card-footer--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Янв. 15:40
+            </div>
+            <div class="card-footer__countcomment card-footer__countcomment--middle">
+                <span class="icon icon-close-comment-24--gray"></span>
+                <span class="card-footer__countcomment__number">12</span>
+            </div>
+        </div>
+    </div>
+    <div class="card card--mini">
+        <div class="card-head--event--mini">
+			<span class="card-head__tag card-head__tag--middle ">
+				лекции
+			</span>
+            <img class="card__img card__img--mini" src="img/card/event_middle.png">
+        </div>
+        <div class="card-body card-body--mini">
+            <div class="card-body__title card-body__title--mini">
+                Эволюция паролей:путеводитель по аутентификации…
+            </div>
+        </div>
+
+        <div class="card-footer card-footer--middle">
+            <div class="card-footer__datetime card-footer__datetime--middle">
+                24 Янв. 15:40
+            </div>
+            <div class="card-footer__countcomment card-footer__countcomment--middle">
+                <span class="icon icon-close-comment-24--gray"></span>
+                <span class="card-footer__countcomment__number">12</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-container-item">
+            <div class="footer-container-item__logo">
+                <span class="icon icon-logo"></span>
+            </div>
+            <div class="footer-container-item__policy">
+                Privacy Policy
+            </div>
+            <div class="footer-container-item__policy">
+                © 2017 Lambda Co.
+            </div>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Навигация</div>
+            <ul class="footer-container-item__menu">
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Главная</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Публикации</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Мероприятия</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Партнеры</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">О нас</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Контакты</div>
+            <div class="footer-container-item__contacts">
+                <a class="footer-container-item__contacts__phone" href="#">8 800 555 35 35</a>
+                <a class="footer-container-item__contacts__mail" href="#">info@lambda-it.ru</a>
+            </div>
+            <div class="footer-container-item__border"></div>
+            <div class="footer-container-item__social">
+                <ul class="footer-container-item__social__list">
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-vk"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-github"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END Навигация  -->
+
+
+
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="libs/normalize-css/normalize.css">
+<script src="js/scripts.min.js"></script>
+
+<script>
+    window.onload = function () {
+        var elements = document.querySelectorAll('.js-fullview');
+        Intense(elements);
+    }
+</script>
+
+</body>
+</html>

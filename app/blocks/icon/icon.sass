@@ -1,0 +1,89 @@
+/**Created by mr8bit on 19.12.17.**/
+
+$white: "#fff"
+$black: "#000"
+$gray: "#D8D8D8"
+
+$degs: 0 45 90 180 270 360
+
+@each $deg in $degs
+  .icon-rotate-#{$deg}:before
+    transform: rotate($deg+deg)
+
+.icon:before
+  display: inline-block
+  font-family: 'lambda'
+  font-style: normal
+  font-weight: normal
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  line-height: 1
+  -moz-osx-font-smoothing: grayscale
+
+.icon
+  // Social
+  &-vk:before
+    content: '\0041'
+  &-twitter:before
+    content: '\0042'
+  &-github:before
+    content: '\0056'
+  &-instagram:before
+    content: '\0048'
+  &-youtuve:before
+    content: '\004d'
+  // Control
+  &-comment:before
+    content: '\0046'
+  &-menu:before
+    content: '\004a'
+  &-eye:before
+    content: '\0043'
+  &-search:before
+    content: '\0047'
+  &-share:before
+    content: '\0045'
+
+  &-user:before
+    content: '\0049'
+  &-more:before
+    content: '\004b'
+
+  &-favorite:before
+    content: '\004f'
+  &-faovrite-solid:before
+    content: '\0050'
+
+  &-place:before
+    content: '\0052'
+  &-mail:before
+    content: '\0051'
+  &-phone:before
+    content: '\0053'
+
+  &-clock:before
+    content: '\0054'
+  &-clock-solid:before
+    content: '\0055'
+  &-wifi:before
+    content: '\0057'
+  &-notebook:before
+    content: '\0058'
+  // Arrow
+  &-arrow-left:before
+    content: '\0044'
+  &-arrow-right:before
+    content: '\004c'
+
+  // Support
+  &-flip:before
+    transform: scale(-1, 1)
+
+  &--15-right
+    margin-right: 15px
+
+
+
+  &-logo:before
+    content: '\0059'
+@import "media"
