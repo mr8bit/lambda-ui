@@ -12,16 +12,12 @@
 
 <h2>Какие элементы есть в Lambda UI? </h2>
 <ul>
-
-    <li><a href="app/blocks/card/card.md"> Карточки новостей</a></li>
-    <li><a href="app/blocks/navigation/navigations.md"> Навигация</a></li>
-    <li><a href="app/blocks/navigation/navigations.md"> Кнопки</a></li>
-    <li><a href="app/blocks/navigation/navigations.md"> Панели</a></li>
-    <li><a href="app/blocks/navigation/navigations.md"> Иконки</a></li>
-    <li><a href="app/blocks/navigation/navigations.md"> Подвал</a></li>
-    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/card/card.md"> Карточки новостей</a></li>
-    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/navigation/navigations.md"> Навигация</a></li>
-
+    <li><a href="doc/card.md"> Карточки новостей</a></li>
+    <li><a href="doc/navigations.md"> Навигация</a></li>
+    <li><a href="doc/navigations.md"> Кнопки</a></li>
+    <li><a href="doc/navigations.md"> Панели</a></li>
+    <li><a href="doc/navigations.md"> Иконки</a></li>
+    <li><a href="doc/navigations.md"> Подвал</a></li>
 </ul>
 
 
@@ -30,6 +26,7 @@
 	<li>Скачайте  <strong>Lambda UI</strong> из GitHub</li>
 	<li>Скачайте Node Modules: <strong>npm i</strong></li>
 	<li>И выполните команду: <strong>gulp</strong></li>
+	<li>Перейдите по адресу: http://localhost:3000/ </strong></li>
 </ol>
 
 <h2>Gulp команды:</h2>
