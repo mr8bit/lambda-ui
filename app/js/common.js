@@ -636,6 +636,7 @@ catch (err) {
 try {
     window.addEventListener("scroll", closeSidebar);
 }
-catch (err){
+catch (err) {
     console.log(err);
 }
+

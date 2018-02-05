@@ -1,0 +1,47 @@
+.menu
+  width: 255px
+  margin: 15px 15px 15px 0px
+  border-radius: 6px
+  background: white
+  &__list
+    padding: 0
+    margin: 0
+  &__item
+    list-style: none
+    border-bottom: 2px solid #F5F5F5
+    &:last-child
+      border-bottom: none
+    &--filter
+      padding: 5px 20px
+  &__icon
+    color: #D8D8D8
+    font-size: 15px
+  &__link
+    padding: 23px 20px
+    font-size: 13px
+    font-weight: 500
+    color: #808080
+    width: 100%
+    align-content: center
+    display: flex
+    justify-content: space-between
+    &:hover
+      color: #1875F0
+  &--submenu
+    transition: all 500ms ease
+    background: #F5F5F5
+    max-height: 0
+    overflow-y: hidden
+
+
+
+  // Модификаторы для фильтра
+  &--filter
+    transition: all 500ms ease
+    background: white
+    margin-top: -10px
+    max-height: 0
+    overflow-y: hidden
+
+  &--open
+    max-height: 999px

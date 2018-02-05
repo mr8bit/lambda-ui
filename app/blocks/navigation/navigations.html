@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+
+    <style>body {
+        opacity: 0;
+        overflow-x: hidden;
+    }
+
+    html {
+        background-color: #fff;
+    }</style>
+
+</head>
+
+<body>
+
+<!-- START Навигация  -->
+<div class="container">
+    <h2>Навигация</h2>
+</div>
+
+
+<nav class="navigation-breadcrumb">
+    <ol class="navigation-breadcrumb-list">
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Главная</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">
+            <a class="navigation-breadcrumb-list__item__link" href="#">Новости</a>
+        </li>
+        <li class="navigation-breadcrumb-list__item">Sberbank Data Science Day 2017</li>
+    </ol>
+</nav>
+<nav class="navigation-head navigation-head--fluid">
+    <div class="navigation-head-container">
+        <div class="navigation-head-container-body navigation-head-container-body--fluid">
+            <h4 class="navigation-head-container__title ">Публикации</h4>
+        </div>
+    </div>
+</nav>
+<nav class="navigation-head navigation-head--fluid">
+    <div class="navigation-head-container">
+        <div class="navigation-head-container-body navigation-head-container-body--fluid">
+            <h4 class="navigation-head-container__title ">Публикации</h4>
+            <ul class="navigation-head-container-body__menu">
+                <li class="navigation-head-container-body__menu__item navigation-head-container-body__menu__item--active ">
+                    Все
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    MeetUp
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Лекции
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Встречи
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Календарь
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navigation-head ">
+    <div class="navigation-head-container navigation-head-container--block">
+        <div class="navigation-head-container-body">
+            <h4 class="navigation-head-container__title">Мероприятия</h4>
+            <ul class="navigation-head-container-body__menu">
+                <li class="navigation-head-container-body__menu__item navigation-head-container-body__menu__item--active ">
+                    Все
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    MeetUp
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Лекции
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Встречи
+                </li>
+                <li class="navigation-head-container-body__menu__item">
+                    Календарь
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</nav>
+
+<!-- E-commerce Menu  Start-->
+<nav class="navigation-card" style="margin: 30px 0">
+    <div class="navigation-card__top">
+        <!-- Только у элемента может быть модификатор -->
+        <div class="navigation-card__container navigation-card__container--static ">
+            <!-- Левая часть бара START-->
+            <div class="navigation-card__left navigation-card__left--without-width navigation-card__mobile-view">
+                <!--// Меню показывается только на мобильной и планшетной части с помощью Helpers-->
+                <div class="navigation-card__sidebar-btn js-toogleSidebar hide-in-lg">
+                    <span class="icon icon-menu"></span>
+                </div>
+                <!--// Логотип-->
+                <!--// Логотип-->
+                <div class="navigation-card__brand ">
+                    <span class="icon icon-logo "> </span>
+                </div>
+
+            </div>
+            <!-- Лева часть бара END-->
+
+            <!-- Центральная часть бара START-->
+            <div class="navigation-card__center navigation-card__user-element show-in-lg-flex">
+                <!--  // Форма поиска -->
+                <div class='form-group form-lg'>
+                    <div class="icon--input"><i class="icon icon-search"></i></div>
+                    <input class="form-input form-input-lg form-input--with-icon" type="text" placeholder="Поиск">
+                </div>
+            </div>
+            <!-- Центральная часть бара END-->
+
+            <!-- Правая часть бара START-->
+            <!-- Меню с пользовательскими элементами -->
+            <div class="navigation-card__right  navigation-card__right--without-width show-in-lg-flex">
+                <!-- КОРЗИНА -->
+                <a href="#" class="navigation-card-item__link">
+                    <div class="navigation-card-item">
+                        <span class="icon icon-cart navigation-card-item__icon"></span>
+                        <span class="navigation-card-item__text">
+                                <span class="jscart">0</span> товаров
+                            </span>
+                    </div>
+                </a>
+
+                <!-- ВОЙТИ В КАБИНЕТ -->
+                <a href="#" class="navigation-card-item__link">
+                    <div class="navigation-card-item">
+                        <span class="icon icon-user navigation-card-item__icon"></span>
+                        <span class="navigation-card-item__text">
+                                 Войти
+                            </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-head__bottom show-in-lg-flex">
+        <div class="navigation-card__container navigation-card__container--static navigation-card__container--column">
+            <!-- Меню бара  -->
+            <ul class="navigation-card__menu">
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 1</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 2</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 3</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 4</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 5</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 6</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 7</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="navigation-card-sidebar navigation-card-sidebar--full navigation-card-sidebar--border navigation-card-sidebar--center js-SideBar ">
+        <div class='form-group form-lg navigation-card-sidebar__search'>
+            <div class="icon--input"><i class="icon icon-search"></i></div>
+            <input class="form-input form-input-lg form-input--with-icon" type="text" placeholder="Поиск">
+        </div>
+        <div class="navigation-card__right  navigation-card__right--without-width ">
+            <!-- КОРЗИНА -->
+            <a href="#" class="navigation-card__container-item__link">
+                <div class="navigation-card__container-item">
+                    <span class="icon icon-cart navigation-card__container-item__icon"></span>
+                    <span class="navigation-card__container-item__text">
+                                <span class="jscart">0</span> товаров
+                            </span>
+                </div>
+            </a>
+
+            <!-- ВОЙТИ В КАБИНЕТ -->
+            <a href="#" class="navigation-card__container-item__link">
+                <div class="navigation-card__container-item">
+                    <span class="icon icon-user navigation-card__container-item__icon"></span>
+                    <span class="navigation-card__container-item__text">
+                                 Войти
+                            </span>
+                </div>
+            </a>
+        </div>
+
+
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 1</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 2</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 3</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 4</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 5</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 6</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 7</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 8</a>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+<!-- E-commerce Menu  END-->
+
+
+<nav class="navigation-card" style="margin: 30px 0">
+    <!-- Только у элемента может быть модификатор -->
+    <div class="navigation-card__container   ">
+        <!-- Левая часть бара START-->
+        <div class="navigation-card__left">
+
+            <div class="navigation-card__sidebar-btn js-toogleSidebar">
+                <span class="icon icon-menu"></span>
+            </div>
+
+        </div>
+        <!-- Лева часть бара END-->
+
+        <!-- Центральная часть бара START-->
+        <div class="navigation-card__center  ">
+            <!-- Логотип-->
+            <div class="navigation-card__brand">
+                <span class="icon icon-logo "> </span>
+            </div>
+        </div>
+        <!-- Центральная часть бара END-->
+
+        <!-- Правая часть бара START-->
+        <!-- Меню с пользовательскими элементами -->
+        <div class="navigation-card__right    ">
+            <ul class="navigation-card-social__list">
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navigation-card-sidebar  js-SideBar ">
+
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+</nav>
+
+
+<nav class="navigation-card" style="margin: 30px 0">
+    <!-- Только у элемента может быть модификатор -->
+    <div class="navigation-card__container   ">
+
+        <!-- Левая часть бара START-->
+        <div class="navigation-card__left ">
+
+            <div class="navigation-card__sidebar-btn js-toogleSidebar">
+                <span class="icon icon-menu"></span>
+            </div>
+
+            <ul class="navigation-card__container__menu__list">
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Главная</a>
+                </li>
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Пубиликации</a>
+                </li>
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Мероприятия</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Лева часть бара END-->
+
+
+        <!-- Центральная часть бара START-->
+        <div class="navigation-card__center  ">
+            <!-- Логотип-->
+            <div class="navigation-card__brand">
+                <span class="icon icon-logo "> </span>
+            </div>
+        </div>
+        <!-- Центральная часть бара END-->
+
+        <!-- Правая часть бара START-->
+        <div class="navigation-card__right    ">
+            <ul class="navigation-card-social__list">
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Правая часть бара END-->
+    </div>
+    <div class="navigation-card-sidebar  js-SideBar ">
+
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+</nav>
+
+
+<nav class="navigation-card" style="margin: 30px 0">
+    <!-- Только у элемента может быть модификатор -->
+    <div class="navigation-card__container   ">
+
+        <!-- Левая часть бара START-->
+        <div class="navigation-card__left ">
+
+            <div class="navigation-card__sidebar-btn js-toogleSidebar">
+                <span class="icon icon-menu"></span>
+            </div>
+
+            <!-- Логотип-->
+            <div class="navigation-card__brand">
+                <span class="icon icon-logo "> </span>
+            </div>
+        </div>
+        <!-- Лева часть бара END-->
+
+
+        <!-- Центральная часть бара START-->
+        <div class="navigation-card__center  ">
+
+            <ul class="navigation-card__container__menu__list">
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Главная</a>
+                </li>
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Пубиликации</a>
+                </li>
+                <li class="navigation-card__container__menu__list__item">
+                    <a class="navigation-card__container__menu__list__item__link" href="#">Мероприятия</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Центральная часть бара END-->
+
+        <!-- Правая часть бара START-->
+        <div class="navigation-card__right    ">
+            <ul class="navigation-card-social__list">
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-twitter"></span>
+                    </a>
+                </li>
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-instagram"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- Правая часть бара END-->
+    </div>
+    <div class="navigation-card-sidebar  js-SideBar ">
+
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Главная</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Публикации</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">Контакты</a>
+            </li>
+            <li class="navigation-card-sidebar__item  ">
+                <a href="#" class="navigation-card-sidebar__link">О нас</a>
+            </li>
+
+        </ul>
+    </div>
+
+
+</nav>
+
+
+
+
+<link rel="stylesheet" href="../../css/main.min.css">
+<link rel="stylesheet" href="../../libs/normalize-css/normalize.css">
+
+
+</body>
+</html>

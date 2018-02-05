@@ -10,8 +10,8 @@
   padding: 5px 10px
   font-size: 9px
   text-transform: uppercase
-  &--danger
-    background-color: red
+
+
   &--large
     letter-spacing: 1.5px
     font-size: 12px
@@ -25,5 +25,19 @@
     background-color: #F7F7F7
     padding: 9px 17px
     transition: all 200ms
+    &:hover, &:active, &:focus
+      text-decoration: none
+      color: #1875F0
+  &--danger
+    background-color: red
+  &--medium
+    padding: 9px 17px
+    font-size: 12px
+    font-weight: bolder
+    line-height: 30px
+    transition: all 200ms
+    letter-spacing: 1.5px
+  &--small
+    font-size: 10px
 
     @import "media"

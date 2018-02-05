@@ -1,9 +1,6 @@
 .navigation
   &-head
-    margin-top: 30px
-    margin-bottom: 30px
-    margin-right: auto
-    margin-left: auto
+    margin: 30px auto
     &--fluid
       border-bottom: solid 2px #F0F0F0
     &-container
@@ -17,7 +14,7 @@
         position: absolute
         background-color: #f9f9f9
         min-width: 160px
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
         z-index: 1
       &__link
         color: black
@@ -45,7 +42,6 @@
           width: 1170px
           border-bottom: none
           margin: 0 auto
-
         &__menu
           margin: 0 0 -2px 0
           padding: 0
@@ -75,12 +71,68 @@
         color: #666666
   &-card
     background-color: #fff
-    &-container
+    &__left
+      display: flex
+      align-items: center
+      width: 33.3333%
+      justify-content: flex-start
+      &--without-width
+        width: auto
+    &__center
+      display: flex
+      width: 33.3333%
+      align-items: center
+      justify-content: center
+    &__right
+      display: flex
+      width: 33.3333%
+      align-items: center
+      justify-content: flex-end
+      &--without-width
+        width: auto
+    &__user-element
+      width: 33.33333%
+    &__sidebar-btn
+      color: #D8D8D8
+      padding: 32px 36px
+      border-right: 2px solid #F5F5F5
+      &--transparent
+        border-right: none
+
+    &__menu
+      display: flex
+      width: 100%
+      margin: 0
+      justify-content: space-between
+      align-items: center
+      padding: 20px 0px
+
+    &__item
+      list-style: none
+    &__link
+      color: #666666
+      font-weight: 500
+      font-size: 14px
+      &:hover
+        color: #1875F0
+    // BIG HEAD MENU Start
+    &__top
+      display: flex
+      padding: 30px 0
+      width: 100%
+      margin: 0 auto
+      justify-content: space-between
+      border-bottom: 2px solid #F5F5F5
+    // BIG HEAD MENU END
+    &__container
       width: 100%
       z-index: 5
       margin: 0 auto
       display: flex
       justify-content: space-between
+      // ФИКСИРОВАНАНАЯ ШИРИНА
+      &--static
+        width: 1110px
       &__menu
         width: 33.33333%
         display: flex
@@ -94,12 +146,10 @@
           margin-left: 30px
           display: flex
           align-items: center
-        &__sidebar
-          color: #D8D8D8
-          padding: 32px 36px
-          border-right: 2px solid #F5F5F5
-          &--transparent
-            border-right: none
+
+          // BIG head
+          &--lg
+            display: none
         &__list
           padding: 0
           margin: 0 0 0 30px
@@ -117,55 +167,81 @@
                 text-decoration: none
                 color: #1875F0
 
-      &__logo
-        display: flex
-        justify-content: center
-        align-items: center
-        font-size: 80px
-        line-height: 80px
-        color: #4d4d4d
-        width: 33.33333%
-        &--white
-          color: white
-      &__brand
-        height: 89px
-        font-size: 88px
-        line-height: 80px
+    &__brand
+      color: #4d4d4d
+      height: 89px
+      margin: 0 30px
+      font-size: 88px
+      line-height: 80px
+      &--white
+        color: white
 
-      &__social
-        justify-content: flex-end
-        width: 33.33333%
+    // BIG HEAD MENU Start
+    &-item
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      &__link
+        margin: 0 15px
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 0
+      &__text
+        margin-left: 15px
+        color: #808080
+        font-size: 14px
+        font-weight: 500
+        line-height: 30px
+      &__icon
+        color: #D8D8D8
+        line-height: 21px
+        font-size: 21px
+      &:hover &__icon
+        color: #1875F0
+      &:hover &__text
+        color: #1875F0
+    // BIG HEAD MENU END
+
+
+    &-social
+      justify-content: flex-end
+      width: 33.33333%
+      display: flex
+      align-items: center
+      &__list
+        margin: 0 30px 0 0
+        padding: 0
+        list-style: none
+      &__item
+        margin-left: 10px
+        display: inline-block
+
+      &__link
         display: flex
         align-items: center
-        &__list
-          margin: 0 30px 0 0
-          padding: 0
-          &__item
-            margin-left: 10px
-            display: inline-block
-            &__link
-              display: flex
-              align-items: center
-              align-content: center
-              justify-content: center
-              justify-items: center
-              border-radius: 50%
-              border: 2px solid #F5F5F5
-              width: 40px
-              color: #D8D8D8
-              height: 40px
-              &--white
-                color: #fff
-              &__icon
-                font-size: 18px
-                line-height: 18px
-                height: 18px
-                &--white
-                  fill: #fff
-              &:hover
-                border-color: #1875F0
-              &:hover &__icon
-                color: #1875F0
+        align-content: center
+        justify-content: center
+        justify-items: center
+        border-radius: 50%
+        border: 2px solid #F5F5F5
+        width: 40px
+        color: #D8D8D8
+        height: 40px
+
+        &--white
+          color: #fff
+
+        &:hover
+          color: #1875F0
+          border-color: #1875F0
+      &__icon
+        font-size: 18px
+        line-height: 18px
+        height: 18px
+        &--white
+          fill: #fff
+
     &-sidebar
       width: 220px
       height: 100vh
@@ -174,7 +250,19 @@
       z-index: 3
       top: 90px
       transform: translateX(-100%)
-      transition: all 0.3s
+      transition: all 0.3s ease
+      &--full
+        width: 100%
+      &--border
+        border-top: 2px solid #f5f5f5
+      &__search
+        margin: 10px 30px 10px 30px
+        width: calc(100% - 60px)
+      &--center
+        display: flex
+        flex-direction: column
+        align-items: center
+
       &__list
         margin: 0
         padding: 30px
@@ -183,6 +271,9 @@
         padding: 15px 25px 12px
         &:first-child
           padding-top: 0
+        &--center
+          text-align: center
+          padding: 10px 25px 0px
       &__link
         font-size: 18px
         color: #666
@@ -233,5 +324,41 @@
         padding-top: 60px
         &--letter
           height: calc(450px - 90px)
+  &-pages
+    width: 100%
+    margin: 15px 0
+    height: 60px
+    background-color: white
+    display: flex
+    justify-content: space-between
+    align-content: center
+    &__left, &__center, &__right
+      width: 30%
+      display: flex
+      align-content: center
+      flex-direction: row
+      align-items: center
+      justify-content: center
+    &__center
+      width: 40%
+    &__left
+      border-right: 2px solid #F5F5F5
+    &__right
+      border-left: 2px solid #F5F5F5
+    &__list
+      display: flex
+      padding: 0
+      margin: 0
+      list-style: none
+      font-size: 17px
+      flex-direction: row
+      align-items: center
+      align-content: center
+    &__item
+      padding: 0 5px
+    &__link
+      color: #d8d8d8
+    &__active
+      color: #666666
 
 @import "media"

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="../../img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body {
+        opacity: 0;
+        overflow-x: hidden;
+    }
+
+    html {
+        background-color: #fff;
+    }</style>
+
+</head>
+<body>
+<!-- E-commerce Menu  Start-->
+<nav class="navigation-card">
+    <div class="navigation-card__top">
+        <!-- Только у элемента может быть модификатор -->
+        <div class="navigation-card__container navigation-card__container--static ">
+            <!-- Левая часть бара START-->
+            <div class="navigation-card__left navigation-card__left--without-width navigation-card__mobile-view">
+                <!--// Меню показывается только на мобильной и планшетной части с помощью Helpers-->
+                <div class="navigation-card__sidebar-btn js-toogleSidebar hide-in-lg">
+                    <span class="icon icon-menu"></span>
+                </div>
+                <!--// Логотип-->
+                <!--// Логотип-->
+                <div class="navigation-card__brand ">
+                    <span class="icon icon-logo "> </span>
+                </div>
+
+            </div>
+            <!-- Лева часть бара END-->
+
+            <!-- Центральная часть бара START-->
+            <div class="navigation-card__center navigation-card__user-element show-in-lg-flex">
+                <!--  // Форма поиска -->
+                <div class='form-group form-lg'>
+                    <div class="icon--input"><i class="icon icon-search"></i></div>
+                    <input class="form-input form-input-lg form-input--with-icon" type="text" placeholder="Поиск">
+                </div>
+            </div>
+            <!-- Центральная часть бара END-->
+
+            <!-- Правая часть бара START-->
+            <!-- Меню с пользовательскими элементами -->
+            <div class="navigation-card__right  navigation-card__right--without-width show-in-lg-flex">
+                <!-- КОРЗИНА -->
+                <a href="#" class="navigation-card-item__link">
+                    <div class="navigation-card-item">
+                        <span class="icon icon-cart navigation-card-item__icon"></span>
+                        <span class="navigation-card-item__text">
+                                <span class="jscart">0</span> товаров
+                            </span>
+                    </div>
+                </a>
+
+                <!-- ВОЙТИ В КАБИНЕТ -->
+                <a href="#" class="navigation-card-item__link">
+                    <div class="navigation-card-item">
+                        <span class="icon icon-user navigation-card-item__icon"></span>
+                        <span class="navigation-card-item__text">
+                                 Войти
+                            </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="navigation-head__bottom show-in-lg-flex">
+        <div class="navigation-card__container navigation-card__container--static navigation-card__container--column">
+            <!-- Меню бара  -->
+            <ul class="navigation-card__menu">
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 1</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 2</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 3</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 4</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 5</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 6</a>
+                </li>
+                <li class="navigation-card__item">
+                    <a class="navigation-card__link" href="#">Item 7</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="navigation-card-sidebar navigation-card-sidebar--full navigation-card-sidebar--border navigation-card-sidebar--center js-SideBar ">
+        <div class='form-group form-lg navigation-card-sidebar__search'>
+            <div class="icon--input"><i class="icon icon-search"></i></div>
+            <input class="form-input form-input-lg form-input--with-icon" type="text" placeholder="Поиск">
+        </div>
+        <div class="navigation-card__right  navigation-card__right--without-width ">
+            <!-- КОРЗИНА -->
+            <a href="#" class="navigation-card__container-item__link">
+                <div class="navigation-card__container-item">
+                    <span class="icon icon-cart navigation-card__container-item__icon"></span>
+                    <span class="navigation-card__container-item__text">
+                                <span class="jscart">0</span> товаров
+                            </span>
+                </div>
+            </a>
+
+            <!-- ВОЙТИ В КАБИНЕТ -->
+            <a href="#" class="navigation-card__container-item__link">
+                <div class="navigation-card__container-item">
+                    <span class="icon icon-user navigation-card__container-item__icon"></span>
+                    <span class="navigation-card__container-item__text">
+                                 Войти
+                            </span>
+                </div>
+            </a>
+        </div>
+
+
+        <ul class="navigation-card-sidebar__list">
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 1</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 2</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 3</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 4</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 5</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 6</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 7</a>
+            </li>
+            <li class="navigation-card-sidebar__item navigation-card-sidebar__item--center">
+                <a href="#" class="navigation-card-sidebar__link">Item 8</a>
+            </li>
+        </ul>
+    </div>
+
+
+</nav>
+<!-- E-commerce Menu  END-->
+
+
+<div class="head">
+    <h2 class="head__title">Title</h2>
+    <div class="head__line head__line--blue"></div>
+</div>
+<div class="container container-2">
+    <div class="cart-steps">
+        <div class="cart-steps__list">
+            <div class="cart-steps__item">
+                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon">
+                    <span class="icon icon-cart"></span>
+                </div>
+                <div class="cart-steps__param">
+                    <h5 class="cart-steps__order">ПЕРВЫЙ ШАГ</h5>
+                    <h5 class="cart-steps__name">Корзина</h5>
+                </div>
+            </div>
+            <div class="cart-steps__item">
+                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon">
+                    <span class="icon icon-credit-card"></span>
+                </div>
+                <div class="cart-steps__param">
+                    <h5 class="cart-steps__order">Второй ШАГ</h5>
+                    <h5 class="cart-steps__name">Методы оплаты</h5>
+                </div>
+            </div>
+            <div class="cart-steps__item">
+                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon">
+                    <span class="icon icon-delivery"></span>
+                </div>
+                <div class="cart-steps__param">
+                    <h5 class="cart-steps__order">ТРЕТИЙ ШАГ</h5>
+                    <h5 class="cart-steps__name">Метод доставки</h5>
+                </div>
+            </div>
+            <div class="cart-steps__item">
+                <div class="btn  btn--secondary btn--circle  cart-steps__icon">
+                    <span class="icon icon-done"></span>
+                </div>
+                <div class="cart-steps__param">
+                    <h5 class="cart-steps__order">ЧЕТВЕРТЫЙ ШАГ</h5>
+                    <h5 class="cart-steps__name">Подтверждение</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container container-2">
+    <div class="cart-list">
+        <table class="cart-list__table">
+            <tr class="cart-list__row">
+                <th class="cart-list__collumn cart-list__collumn--title cart-list__collumn--product-name">Товар</th>
+                <th class="cart-list__collumn cart-list__collumn--title">Цена</th>
+                <th class="cart-list__collumn cart-list__collumn--title">Количество</th>
+                <th class="cart-list__collumn cart-list__collumn--title">Итоговая цена</th>
+            </tr>
+            <tr class="cart-list__row">
+                <th class=" cart-list__collumn--product-name   cart-list__collumn--product cart-list__collumn--padding">
+                    <img src="../../img/e-commerce/product/product.png" class="cart-list__image ">
+                    <span class="cart-list__name">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                </th>
+                <th class="cart-list__collumn cart-list__price">
+                    <span>5 500 ₽</span>
+                </th>
+                <th class="cart-list__collumn cart-list__collumn--title">Количество</th>
+                <th class="cart-list__collumn cart-list__price">
+                    <span>5 500 ₽</span>
+                    <a class="cart-list__price"><span class="icon icon-delete"></span></a>
+                </th>
+            </tr>
+            <tr class="cart-list__row">
+                <th class=" cart-list__collumn--product-name   cart-list__collumn--product cart-list__collumn--padding">
+                    <img src="../../img/e-commerce/product/product.png" class="cart-list__image ">
+                    <span class="cart-list__name">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                </th>
+                <th class="cart-list__collumn cart-list__price">
+                    <span>5 500 ₽</span>
+                </th>
+                <th class="cart-list__collumn cart-list__collumn--title">Количество</th>
+                <th class="cart-list__collumn cart-list__price">
+                    <span>5 500 ₽</span>
+                    <a class="cart-list__price"><span class="icon icon-delete"></span></a>
+                </th>
+            </tr>
+        </table>
+        <div class="cart-total">
+            <div class="cart-total__list">
+                <span class="cart-total__title">Итоговая цена:</span>
+                <span class="cart-total__price">5 500 ₽</span>
+            </div>
+        </div>
+
+        <div class="cart-control">
+
+            <button class="btn btn--secondary btn--default icon--15-right">
+                <span class="icon icon-arrow-left icon--10-right"></span>
+                <span style="text-transform: uppercase">Магазин</span>
+            </button>
+
+            <button class="btn btn--primary btn--default icon--15-left">
+                <span style="text-transform: uppercase">Оплата</span>
+                <span class="icon icon-arrow-right icon--10-left"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-container-item">
+            <div class="footer-container-item__logo">
+                <span class="icon icon-logo"></span>
+            </div>
+            <div class="footer-container-item__policy">
+                Privacy Policy
+            </div>
+            <div class="footer-container-item__policy">
+                © 2017 Lambda Co.
+            </div>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Навигация</div>
+            <ul class="footer-container-item__menu">
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Главная</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Публикации</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Мероприятия</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">Партнеры</a>
+                </li>
+                <li class="footer-container-item__menu__item">
+                    <a class="footer-container-item__menu__item__link" href="#">О нас</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-container-item">
+            <div class="footer-container-item__head">Контакты</div>
+            <div class="footer-container-item__contacts">
+                <a class="footer-container-item__contacts__phone" href="#">8 800 555 35 35</a>
+                <a class="footer-container-item__contacts__mail" href="#">info@lambda-it.ru</a>
+            </div>
+            <div class="footer-container-item__border"></div>
+            <div class="footer-container-item__social">
+                <ul class="footer-container-item__social__list">
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-twitter"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-instagram"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-vk"></span>
+                        </a>
+                    </li>
+                    <li class="footer-container-item__social__list__item">
+                        <a class="footer-container-item__social__list__item__link" href="#">
+                            <span class="footer-container-item__social__list__item__link__icon icon icon-github"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END Навигация  -->
+
+
+<link rel="stylesheet" href="../../css/main.min.css">
+
+</body>
+</html>

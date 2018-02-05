@@ -19,6 +19,7 @@ var gulp           = require('gulp'),
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
+		'app/blocks/e-commerce/menu/menu.js'
 		])
 	.pipe(concat('common.min.js'))
 	.pipe(uglify())
@@ -60,7 +61,7 @@ gulp.task('sass', function() {
 gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
 	gulp.watch('app/blocks/**/*.sass',['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	gulp.watch(['libs/**/*.js', 'app/js/common.js', 'app/blocks/e-commerce/menu/menu.js' ], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/blocks/*.html', browserSync.reload);
 });

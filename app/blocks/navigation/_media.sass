@@ -37,6 +37,17 @@
 @media only screen and (max-width: 768px)
   .navigation
     &-card
+      &__mobile-view
+        width: 100%
+      &__top
+        padding: 0
+      &__brand--img
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+      &--mobile-view
+        width: 100%
       &-container
         &__logo
         &__menu
@@ -54,7 +65,6 @@
               display: none
               &:first-child
                 display: block
-
               &__link
                 width: 45px
                 height: 45px
@@ -85,11 +95,37 @@
           &__menu
             &__item
               padding: 33px 10px
-
+    &-card
+      &__mobile-view
+        width: 100%
+      &__top
+        padding: 0
+      &__brand--img
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+      &--mobile-view
+        width: 100%
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
   .navigation
     &-card
+      &__mobile-view
+        width: 100%
+      &__top
+        padding: 0
+      &__brand--img
+        display: flex
+        width: 100%
+        align-items: center
+        justify-content: center
+      &--mobile-view
+        width: 100%
+      &--lg
+        display: block
+      &-form
+        display: none
       &-container
         &__logo
         &__menu
@@ -99,22 +135,27 @@
             padding-left: 0
           &__logo
             display: none
-        &__social
-          &__list
-            display: flex
-            flex-direction: row
-            &__item
-              display: none
-              &:first-child
-                display: block
+          &--with_logo
+            &--lg
+              width: 100%
+              display: flex
+              justify-content: space-between
+      &-social
+        &__list
+          display: flex
+          flex-direction: row
+        &__item
+          display: none
+          &:first-child
+            display: block
 
-              &__link
-                width: 45px
-                height: 45px
-                &__icon
-                  font-size: 14px
-                  line-height: 14px
-                  height: 14px
+        &__link
+          width: 45px
+          height: 45px
+        &__icon
+          font-size: 14px
+          line-height: 14px
+          height: 14px
     &-head
       &-container
         &--block
