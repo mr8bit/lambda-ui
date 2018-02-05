@@ -36,59 +36,67 @@
 </head>
 
 <nav class="navigation-card">
-    <div class="navigation-card-container">
-        <div class="navigation-card-container__menu">
-            <div class="navigation-card-container__menu__sidebar js-toogleSidebar">
+    <!-- Только у элемента может быть модификатор -->
+    <div class="navigation-card__container   ">
+        <!-- Левая часть бара START-->
+        <div class="navigation-card__left">
+
+            <div class="navigation-card__sidebar-btn js-toogleSidebar">
                 <span class="icon icon-menu"></span>
             </div>
+
         </div>
-        <div class="navigation-card-container__logo">
-            <span class="icon icon-logo navigation-card-container__brand"> </span>
+        <!-- Лева часть бара END-->
+
+        <!-- Центральная часть бара START-->
+        <div class="navigation-card__center  ">
+            <!-- Логотип-->
+            <div class="navigation-card__brand">
+                <span class="icon icon-logo "> </span>
+            </div>
         </div>
-        <div class="navigation-card-container__social">
-            <ul class="navigation-card-container__social__list">
-                <li class="navigation-card-container__social__list__item">
-                    <a class="navigation-card-container__social__list__item__link" href="#">
-                        <span class="navigation-card-container__social__list__item__link__icon icon icon-twitter"></span>
+        <!-- Центральная часть бара END-->
+
+        <!-- Правая часть бара START-->
+        <!-- Меню с пользовательскими элементами -->
+        <div class="navigation-card__right    ">
+            <ul class="navigation-card-social__list">
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-twitter"></span>
                     </a>
                 </li>
-                <li class="navigation-card-container__social__list__item">
-                    <a class="navigation-card-container__social__list__item__link" href="#">
-                        <span class="navigation-card-container__social__list__item__link__icon icon icon-instagram"></span>
-                    </a>
-                </li>
-                <li class="navigation-card-container__social__list__item">
-                    <a class="navigation-card-container__social__list__item__link" href="#">
-                        <span class="navigation-card-container__social__list__item__link__icon icon icon-vk"></span>
-                    </a>
-                </li>
-                <li class="navigation-card-container__social__list__item">
-                    <a class="navigation-card-container__social__list__item__link" href="#">
-                        <span class="navigation-card-container__social__list__item__link__icon icon icon-github"></span>
+                <li class="navigation-card-social__item">
+                    <a class="navigation-card-social__link" href="#">
+                        <span class="navigation-card-social__icon icon icon-instagram"></span>
                     </a>
                 </li>
             </ul>
         </div>
     </div>
-    <div class="navigation-card-sidebar js-SideBar ">
+    <div class="navigation-card-sidebar  js-SideBar ">
+
         <ul class="navigation-card-sidebar__list">
-            <li class="navigation-card-sidebar__item">
+            <li class="navigation-card-sidebar__item  ">
                 <a href="#" class="navigation-card-sidebar__link">Главная</a>
             </li>
-            <li class="navigation-card-sidebar__item">
+            <li class="navigation-card-sidebar__item  ">
                 <a href="#" class="navigation-card-sidebar__link">Публикации</a>
             </li>
-            <li class="navigation-card-sidebar__item">
+            <li class="navigation-card-sidebar__item  ">
                 <a href="#" class="navigation-card-sidebar__link">Мероприятия</a>
             </li>
-            <li class="navigation-card-sidebar__item">
+            <li class="navigation-card-sidebar__item  ">
                 <a href="#" class="navigation-card-sidebar__link">Контакты</a>
             </li>
-            <li class="navigation-card-sidebar__item">
+            <li class="navigation-card-sidebar__item  ">
                 <a href="#" class="navigation-card-sidebar__link">О нас</a>
             </li>
+
         </ul>
     </div>
+
+
 </nav>
 
 <div class="container">
@@ -520,7 +528,6 @@
         </div>
     </div>
 </footer>
-<!-- END Навигация  -->
 
 <link rel="stylesheet" href="css/main.min.css">
 <link rel="stylesheet" href="libs/normalize-css/normalize.css">
