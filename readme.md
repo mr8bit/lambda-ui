@@ -12,19 +12,23 @@
 
 <h2>Какие элементы есть в Lambda UI? </h2>
 <ul>
+
     <li><a href="app/blocks/card/card.md"> Карточки новостей</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Навигация</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Кнопки</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Панели</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Иконки</a></li>
     <li><a href="app/blocks/navigation/navigations.md"> Подвал</a></li>
+    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/card/card.md"> Карточки новостей</a></li>
+    <li><a href="https://github.com/mr8bit/lambda-ui/blob/master/app/blocks/navigation/navigations.md"> Навигация</a></li>
+
 </ul>
 
 
 <h2>Как начать с  Lambda UI? </h2>
 <ol>
-	<li>Скачайте  <strong>Lambda UI</strong> из GitHub;</li>
-	<li>Скачайте Node Modules: <strong>npm i</strong>;</li>
+	<li>Скачайте  <strong>Lambda UI</strong> из GitHub</li>
+	<li>Скачайте Node Modules: <strong>npm i</strong></li>
 	<li>И выполните команду: <strong>gulp</strong></li>
 </ol>
 
