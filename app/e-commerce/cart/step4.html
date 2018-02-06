@@ -196,8 +196,8 @@
                 </div>
             </div>
             <div class="cart-steps__item">
-                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon">
-                    <span class="icon icon-credit-card"></span>
+                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon cart-steps__icon--done">
+                    <span class="icon icon-done"></span>
                 </div>
                 <div class="cart-steps__param">
                     <h5 class="cart-steps__order">Второй ШАГ</h5>
@@ -228,81 +228,67 @@
 
 <div class="container container-2">
     <div class="cart-form">
-        <h5 class="cart__title">Кому доставить</h5>
+        <h5 class="cart__title">Доставка</h5>
+        <div class="cart-form__group ">
+            <div class="col-lg-7">
+                <div class="form-group form-group--vertical ">
+                    <label id="fromshop" class="control control--radio">Самовывоз из магазина, Москва, Кутузовский пр.
+                        88 ТЦ Квадро -
+                        <span class="cart-form__price">0₽</span>
+                        <input data-adress="Москва, Кутузовский пр. 88" class="cart-delivery__input"
+                               value="delivery-from-shop" type="radio" name="delivery"/>
+                        <div class="control__indicator"></div>
+                    </label>
+                </div>
+                <div class="form-group form-group--vertical ">
+                    <label class="control control--radio"> Доставка курьером - <span class="cart-form__price">300₽</span>
+                        <input class="cart-delivery__input" value="delivery-courier" type="radio" name="delivery"/>
+                        <div class="control__indicator"></div>
+                    </label>
+                </div>
+
+                <div id="courier-form" style="display: none">
+
+                    <div class="form-group form-group--vertical col-md-8">
+                        <label class="form-label">Адресс доставки</label>
+                        <input value="" id="courier-input" type="text" class="form-input" placeholder="Адресс доставки">
+                    </div>
+
+                    <div class="form-group form-group--vertical col-md-4">
+                        <label class="form-label">Квартира</label>
+                        <input value=""  type="text" class="form-input" placeholder="Квартира">
+                    </div>
+                    <div class="form-group form-group--vertical col-md-4">
+                        <label class="form-label">Этаж </label>
+                        <input value=""  type="text" class="form-input" placeholder="Этаж">
+                    </div>
+                    <div class="form-group form-group--vertical col-md-4">
+                        <label class="form-label">Подъезд </label>
+                        <input value=""  type="text" class="form-input" placeholder="Подъезд">
+                    </div> <div class="form-group form-group--vertical col-md-4">
+                        <label class="form-label">Домофон </label>
+                        <input value=""  type="text" class="form-input" placeholder="Домофон">
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-5">
+                <div style="width: 100%; height: 500px;display: none;transition: all 0.3ms" id="map"></div>
+            </div>
+
+        </div>
+
         <div class="cart-form__group">
-            <div class="form-group form-group--vertical col-lg-6">
-                <label class="form-label">Имя</label>
-                <input type="text" class="form-input" placeholder="Имя">
-                <small class="form-help">чтобы мы знали, как к вам обращаться</small>
-            </div>
 
-            <div class="form-group form-group--vertical col-lg-6">
-                <label class="form-label">Фамилия</label>
-                <input type="text" class="form-input" placeholder="Фамилия">
-                <small class="form-help">на случай, если потеряется номер заказа</small>
-            </div>
-
-            <div class="form-group form-group--vertical col-lg-6">
-                <label class="form-label">Почта</label>
-                <input type="text" class="form-input" placeholder="Почта">
-                <small class="form-help">мы пришлем на нее подтверждение заказа</small>
-
-            </div>
-
-            <div class="form-group form-group--vertical col-lg-6">
-                <label class="form-label">Телефон</label>
-                <input type="text" class="form-input" placeholder="Телефон">
-                <small class="form-help">что бы могли вас предупредить о готовности заказа</small>
-            </div>
-        </div>
-        <h5 class="cart__title">Оплата</h5>
-        <div class="cart-payment">
-
-            <div class="cart-payment__item">
-                <label for="cash" id="label-cash" class="cart-payment__control">
-                    <span class="icon-svg icon-cash cart-payment__icon"> </span>
-                    <div class="cart-payment__text">Наличные</div>
-                    <input id="cash" name="payment-type" class="cart-payment__input" type="radio">
-                </label>
-            </div>
-            <div class="cart-payment__item">
-                <label class="cart-payment__control">
-                    <span class="icon-svg icon-visa cart-payment__icon"> </span>
-                    <div class="cart-payment__text">Visa <br> Оплата на сайте</div>
-                    <input name="payment-type" class="cart-payment__input" type="radio">
-                </label>
-            </div>
-            <div class="cart-payment__item">
-                <label class="cart-payment__control ">
-                    <span class="icon-svg icon-mastercard cart-payment__icon"> </span>
-                    <div class="cart-payment__text">MasterCard <br> Оплата на сайте</div>
-                    <input name="payment-type" class="cart-payment__input" type="radio">
-                </label>
-            </div>
-            <div class="cart-payment__item">
-                <label class="cart-payment__control ">
-                    <span class="icon-svg icon-yandex cart-payment__icon"> </span>
-                    <div class="cart-payment__text">Я.Кошелек</div>
-                    <input name="payment-type" class="cart-payment__input" type="radio">
-                </label>
-            </div>
-            <div class="cart-payment__item">
-                <label class="cart-payment__control ">
-                    <span class="icon-svg icon-qiwi cart-payment__icon"> </span>
-                    <div class="cart-payment__text">Qiwi</div>
-                    <input name="payment-type" class="cart-payment__input" type="radio">
-                </label>
-            </div>
-            <div class="cart-payment__item">
-                <label class="cart-payment__control ">
-                    <span class="icon-svg icon-paypall cart-payment__icon"> </span>
-                    <div class="cart-payment__text">PayPall</div>
-                    <input name="payment-type" class="cart-payment__input" type="radio">
-                </label>
+            <div class="form-group form-group--vertical col-lg-7">
+                <label class="form-label">Комментарий к заказу</label>
+                <textarea type="text" class="form-input" placeholder="Комментарий к заказу"></textarea>
             </div>
 
         </div>
-
 
         <div class="cart-control">
 
@@ -390,7 +376,9 @@
     </div>
 </footer>
 
-<script src="../../blocks/e-commerce/cart/payment.js"></script>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
 
 <link rel="stylesheet" href="../../css/main.min.css">
 <link rel="stylesheet" href="../../libs/normalize-css/normalize.css">
