@@ -205,8 +205,8 @@
                 </div>
             </div>
             <div class="cart-steps__item">
-                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon">
-                    <span class="icon icon-delivery"></span>
+                <div class="btn  btn--secondary btn--circle btn--big cart-steps__icon cart-steps__icon--done">
+                    <span class="icon icon-done"></span>
                 </div>
                 <div class="cart-steps__param">
                     <h5 class="cart-steps__order">ТРЕТИЙ ШАГ</h5>
@@ -228,70 +228,125 @@
 
 <div class="container container-2">
     <div class="cart-form">
-        <h5 class="cart__title">Доставка</h5>
-        <div class="cart-form__group ">
-            <div class="col-lg-7">
-                <div class="form-group form-group--vertical ">
-                    <label id="fromshop" class="control control--radio">Самовывоз из магазина, Москва, Кутузовский пр.
-                        88 ТЦ Квадро -
-                        <span class="cart-form__price">0₽</span>
-                        <input data-adress="Москва, Кутузовский пр. 88" class="cart-delivery__input"
-                               value="delivery-from-shop" type="radio" name="delivery"/>
-                        <div class="control__indicator"></div>
-                    </label>
-                </div>
-                <div class="form-group form-group--vertical ">
-                    <label class="control control--radio"> Доставка курьером - <span class="cart-form__price">300₽</span>
-                        <input class="cart-delivery__input" value="delivery-courier" type="radio" name="delivery"/>
-                        <div class="control__indicator"></div>
-                    </label>
-                </div>
 
-                <div id="courier-form" style="display: none">
-
-                    <div class="form-group form-group--vertical col-md-8">
-                        <label class="form-label">Адресс доставки</label>
-                        <input value="" id="courier-input" type="text" class="form-input" placeholder="Адресс доставки">
-                    </div>
-
-                    <div class="form-group form-group--vertical col-md-4">
-                        <label class="form-label">Квартира</label>
-                        <input value=""  type="text" class="form-input" placeholder="Квартира">
-                    </div>
-                    <div class="form-group form-group--vertical col-md-4">
-                        <label class="form-label">Этаж </label>
-                        <input value=""  type="text" class="form-input" placeholder="Этаж">
-                    </div>
-                    <div class="form-group form-group--vertical col-md-4">
-                        <label class="form-label">Подъезд </label>
-                        <input value=""  type="text" class="form-input" placeholder="Подъезд">
-                    </div> <div class="form-group form-group--vertical col-md-4">
-                        <label class="form-label">Домофон </label>
-                        <input value=""  type="text" class="form-input" placeholder="Домофон">
-                    </div>
-
-
-                </div>
-
-
-            </div>
-            <div class="col-lg-5">
-                <div style="width: 100%; height: 500px;display: none;transition: all 0.3ms" id="map"></div>
-            </div>
-
-        </div>
+        <h5 class="cart__title">Кому доставить</h5>
 
         <div class="cart-form__group">
+            <div class="form-group form-group--vertical col-lg-4">
+                <label class="form-label">Получатель</label>
+                <span class="form__text">Илья Зарутковский</span>
+            </div>
 
-            <div class="form-group form-group--vertical col-lg-7">
-                <label class="form-label">Комментарий к заказу</label>
-                <textarea type="text" class="form-input" placeholder="Комментарий к заказу"></textarea>
+            <div class="form-group form-group--vertical  col-lg-4">
+                <label class="form-label">Почта</label>
+                <span class="form__text">pierdunn@mad.ru</span>
+            </div>
+            <div class="form-group form-group--vertical  col-lg-4">
+                <label class="form-label">Телефон</label>
+                <span class="form__text">+7 916 280 08 06</span>
+            </div>
+        </div>
+
+        <h5 class="cart__title">Доставка</h5>
+
+
+        <div class="cart-form__group">
+            <div class="form-group form-group--vertical col-lg-4">
+                <label class="form-label">Адресс доставки</label>
+                <span class="form__text">Варшавское шоссе 4</span>
+            </div>
+
+            <div class="form-group form-group--vertical  col-lg-2">
+                <label class="form-label">Этаж</label>
+                <span class="form__text">5</span>
+            </div>
+            <div class="form-group form-group--vertical  col-lg-2">
+                <label class="form-label">Подъезд</label>
+                <span class="form__text">1</span>
+            </div>
+            <div class="form-group form-group--vertical  col-lg-2">
+                <label class="form-label">Дом</label>
+                <span class="form__text">1</span>
+            </div>
+        </div>
+
+        <h5 class="cart__title">Оплата</h5>
+        <div class="cart-payment">
+
+            <div class="cart-payment__item">
+                <label id="label-cash" class="cart-payment__control cart-payment__control--activate ">
+                    <span class="icon-svg icon-cash cart-payment__icon"> </span>
+                    <div class="cart-payment__text">Наличные</div>
+                </label>
             </div>
 
         </div>
+        <h5 class="cart__title">Заказ</h5>
+
+
+        <table class="cart-form__table">
+            <tr class="cart-form__row">
+                <th class="cart-form__collumn cart-form__collumn--title cart-form__collumn--product-name">Товар</th>
+                <th class="cart-form__collumn cart-form__collumn--title" style="text-align: center">Цена</th>
+                <th class="cart-form__collumn cart-form__collumn--title" style="text-align: center">Количество</th>
+                <th class="cart-form__collumn cart-form__collumn--title" style="text-align: center">Итоговая цена</th>
+            </tr>
+            <tr class="cart-form__row">
+                <th class=" cart-form__collumn--product-name   cart-form__collumn--product cart-form__collumn--padding">
+                    <img src="../../img/e-commerce/product/product.png" class="cart-form__image ">
+                    <span class="cart-form__name">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                </th>
+                <th class="cart-form__collumn cart-form__price" style="text-align: center">
+                    <span>5 500 ₽</span>
+                </th>
+                <th class="cart-form__collumn " style="text-align: center"><span class="cart-form__price">2</span></th>
+                <th class="cart-form__collumn cart-form__price" style="text-align: center">
+                    <span>5 500 ₽</span>
+                </th>
+            </tr>
+            <tr class="cart-form__row">
+                <th class=" cart-form__collumn--product-name   cart-form__collumn--product cart-form__collumn--padding">
+                    <img src="../../img/e-commerce/product/product.png" class="cart-form__image ">
+                    <span class="cart-form__name">
+                        Lorem ipsum dolor sit amet
+                    </span>
+                </th>
+                <th class="cart-form__collumn cart-form__price" style="text-align: center">
+                    <span>5 500 ₽</span>
+                </th>
+                <th class="cart-form__collumn " style="text-align: center"><span class="cart-form__price">2</span></th>
+                <th class="cart-form__collumn cart-form__price" style="text-align: center">
+                    <span>5 500 ₽</span>
+                </th>
+            </tr>
+            <tr class="cart-form__row">
+                <th class=" cart-form__collumn--product-name   cart-form__collumn--product cart-form__collumn--padding">
+                    <span class="cart-form__name" style="padding: 25px 0">
+                        Доставка курьером
+                    </span>
+                </th>
+                <th class="cart-form__collumn cart-form__price">
+                </th>
+                <th class="cart-form__collumn cart-form__collumn--title"></th>
+                <th class="cart-form__collumn cart-form__price">
+                    <span>300 ₽</span>
+                </th>
+            </tr>
+
+        </table>
+
+
+        <div class="cart-total">
+            <div class="cart-total__list">
+                <span class="cart-total__title">Итоговая цена:</span>
+                <span class="cart-total__price">5 500 ₽</span>
+            </div>
+        </div>
+
 
         <div class="cart-control">
-
             <button class="btn btn--secondary btn--default icon--15-right">
                 <span class="icon icon-arrow-left icon--10-right"></span>
                 <span style="text-transform: uppercase">Назад</span>
